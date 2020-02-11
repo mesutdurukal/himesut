@@ -57,101 +57,120 @@
 							<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">									
-									<h1 class="mb-4">AWS S3 Buckets</h1>
+									<h1 class="mb-4">AWS KMS</h1>
 								</div>
 							</div>							
 						</div>
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/s3.png" alt="">
-							</div>
-									
+								<img src="img/technical/kms.png" alt="">
+							</div>									
 						</div>
-						
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">									
-									<br><h2>Account</h2>
-									We need an amazon account. In your account, create an Access Key & Secret Key:<br>
+									In this page, we will implement an encryption/decryption algorithm using AWS KMS. But we will start from the very beginning: Basics of cryptography.
+									<br><br><h2>History of Cryptography</h2>		
+									<h4>Threads</h4>	
+									From the very early stages of mankind; people have secrets, and on the other hand are curious about secrets of others. 
 								</div>
 							</div>							
 						</div>
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/credentialsAws.png" alt="">
-							</div>
+								<img src="img/technical/gossip.gif" alt="">
+							</div>								
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>Apart from curiosity, sometimes they tried to learn information which others hide from them to make use of it. <br>Privacy is of great importance in this terms, and we faced challanges even in wars. They developed different ways of attacks to learn secrets of others. Some of them are:
+									<ul>
+										<li>Side Channel Attacks
+											<ul>
+												<li>CAT (Cache Attack)</li>
+												<img src="img/technical/cat.jpg" alt="">
+												<li>Differential fault analysis</li>												
+											</ul>
+										</li>
+										<li>Brute Force</li>
+										<li>Chosen Ciphertext Attack</li>
+										<li>Man in the middle</li>
+										<img src="img/technical/mim.jpg" alt="">
+										<li>DoS</li>
+									</ul>
+									<h4>Encryption</h4>		
+									That is why, encryption algorithms are developed on the other hand. Here is a snashot about the growth of encryption algorithms:							
 									
+								</div>
+							</div>							
+						</div>	
+					<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/cryhist.png" alt="">
+							</div>								
 						</div>						
-						
 						<div class="media">							
 							<div class="media-body">
-								<div class="personal_text">	
-									<br> As told in <a href="crypto.html"> Encryption Page </a>, the best way to keep the credentials in the framework is, store them in a config file in encrypyed form.						
-									<br> Let's read config file from resources folder. To be able to find it, resource folders should be added to build path:<br><br>
+								<div class="personal_text">												
+									<br> We can examine these algorithms in two main classes: Symmetric & Asymmetric
+									<br><br><h2>AES</h2>	
+									AES is the mostly used symmetric algorithm. In symmetric algorithms, there is only one key: both for encryption and decryption.
+									<br>Here is a sample implementation:<br>
 								</div>
 							</div>							
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/resources.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/resources1.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/config.png" alt="">
-							</div>
-									
-						</div>
+						</div>									
 						
+
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/encryption.png" alt="">
+							</div>								
+						</div>
 						<div class="media">							
 							<div class="media-body">
-								<div class="personal_text">									
-									<br><h2>Connect to Account</h2>		
-									Now, we can connect using credentials:<br>
+								<div class="personal_text">												
+									<br> The problem about this algorithm is the key storage. Key itself is standing in the code! It is not safe: What will we do? <br>We will keep our key on AWS and we will send our raw data to cloud and get the result. 
+									<br><br><h2>KMS</h2>	
+									First we have to create our key and store it on our account. We have to know the ARN.									
 								</div>
 							</div>							
-						</div>
+						</div>	
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/connect.png" alt="">
-							</div>
-									
+								<img src="img/technical/createkey.png" alt="">
+							</div>								
 						</div>
 						
 						<div class="media">							
 							<div class="media-body">
-								<div class="personal_text">									
-									<br><h2>Operations</h2>		
-									And, we can upload/download/delete file:<br>
+								<div class="personal_text">												
+									<br> Then, lets implement the code:	<br>								
 								</div>
 							</div>							
-						</div>
+						</div>	
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/upload.png" alt="">
-							</div>
-									
+								<img src="img/technical/kmscode.png" alt="">
+							</div>								
 						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/uploaded.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/download.png" alt="">
-							</div>
-									
-						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">																					
+									<br><h2>RSA</h2>	
+									RSA is an asymmetric algorithm. Now, we will have a key pair instead of one: Public & private keys: One for encryption and other for decryption.
+									<br>Here is a sample implementation:<br>
+								</div>
+							</div>							
+						</div>									
 						
+
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/rsa.png" alt="">
+							</div>								
+						</div>
+					
 					</div>
 				</div>
             </div>
