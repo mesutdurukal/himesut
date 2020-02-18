@@ -19,7 +19,7 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158119194-2"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-158119194-2');</script></head>
     <body>
         
         <!--================Header Menu Area =================-->
@@ -57,18 +57,88 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">									
-									<h1 class="mb-4">Awaitility</h1>
+									<h1 class="mb-4">Testing Asynchronous Microservices</h1>									
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/awaitLogo.png" alt="">
+							</div>								
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br> Especially when testing asynchronous microservices, we can never be sure about the exact response time. <br>
+									It depends on the communication between consecutive units. Therefore, instead of waiting for the maximum acceptable duration, <br>we can poll for the expected response with a polling frequency. Lets start with a sample scenario.<br>
+									<br>
 								</div>
 							</div>							
 						</div>
 						<div class="media">
 							<div class="d-flex">
 								<img src="img/technical/await.png" alt="">
-							</div>
-									
+							</div>								
 						</div>
-						
-						
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br> As it can be seen in the example, the response is polled every 1 second. If we would not get it until 10th second, the case would fail. <br>We use awaitility library for polling mechanism. Now let's deep dive into working principles:<br><br>
+									<h2 class="mb-4">Polling until a condition is met</h2>	
+									We can check until a condition is met.(For instance until a number is greater than 3; or a string contains another substring.)<br>
+									
+									<br>
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/await2.png" alt="">
+							</div>								
+						</div>	
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		<br>							
+									<h2 class="mb-4">A shortcut</h2>	
+									If we simply want to check a condition to be met (a boolean value), we can use until method without a matcher:<br>
+									
+									<br>
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/await3.png" alt="">
+							</div>								
+						</div>	
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br> Here, we see AtomicBoolean type instead of Boolean; which gives us opportunity to operate Thread Safe processes.<br>
+									Another point, we can notice, is callable returning methods. We can also notice how an object returning method can be used with ()-> <br>
+									<br>
+								</div>
+							</div>							
+						</div>	
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/await4.png" alt="">
+							</div>								
+						</div>	
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br> <h2 class="mb-4">Callable</h2>	
+									Let's examine how it works: <br>
+									<br>
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/await5.png" alt="">
+							</div>								
+						</div>							
 					</div>
 				</div>
             </div>
