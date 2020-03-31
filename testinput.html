@@ -57,97 +57,29 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">									
-									<h1 class="mb-4">AWS S3 Buckets</h1>
+									<h1 class="mb-4">Test Input Management</h1>
+									Test input management is very important in terms of Escaped Bugs. If you use only a certain data type (i.e Integer) in your tests, can you guarantee that you will not face any problem with other types (i.e String)? I had talked about this issue in my previous talks. Please check <a href="conferences.html"> My Conference Experiences Page </a>. <br>	
 								</div>
 							</div>							
 						</div>
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/s3.png" alt="">
+								<img src="img/technical/testinput.png" alt="">
 							</div>
 									
 						</div>
-						
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">									
-									<br><h2>Account</h2>
-									We need an amazon account. In your account, create an Access Key & Secret Key:<br>
+									<br>
+									Then, how should we handle test input management? In <a href="parametrized.html"> JUnit Parametrized Tests </a> and <a href="dataprovider.html"> TestNG DataProvider </a> pages, I tell some approaches. But those are still a limited number of embedded parameters. There are some libraries which generate random input for you. I will share how one of them works:
+									
 								</div>
 							</div>							
 						</div>
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/credentialsAws.png" alt="">
-							</div>
-									
-						</div>						
-						
-						<div class="media">							
-							<div class="media-body">
-								<div class="personal_text">	
-									<br> As told in <a href="crypto.html"> Encryption Page </a>, the best way to keep the credentials in the framework is, store them in a config file in encrypyed form.						
-									<br> Let's read config file from resources folder. To be able to find it, resource folders should be added to build path:<br><br>
-								</div>
-							</div>							
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/resources.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/resources1.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/config.png" alt="">
-							</div>
-									
-						</div>
-						
-						<div class="media">							
-							<div class="media-body">
-								<div class="personal_text">									
-									<br><h2>Connect to Account</h2>		
-									Now, we can connect using credentials:<br>
-								</div>
-							</div>							
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/connect.png" alt="">
-							</div>
-									
-						</div>
-						
-						<div class="media">							
-							<div class="media-body">
-								<div class="personal_text">									
-									<br><h2>Operations</h2>		
-									And, we can upload/download/delete file:<br>
-								</div>
-							</div>							
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/upload.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/uploaded.png" alt="">
-							</div>
-									
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/download.png" alt="">
+								<img src="img/technical/faker2.png" alt="">
 							</div>
 									
 						</div>
@@ -157,6 +89,12 @@
             </div>
         </section>
         <!--================End Home Banner Area =================-->
+        
+       
+       
+        
+        
+        
         
         
         
