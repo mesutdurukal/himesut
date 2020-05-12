@@ -57,7 +57,86 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">									
-									<h1>Synchorization to Remote Repository</h1>											
+									<h1>Synchorization to Remote Repository</h1>	
+									<h2>Authentication</h2>
+									Authentication should be ensured over either SSH or HTTPS. Since it is a little more tricky, i will share SSH steps.
+									We need a key pair: (Private & Public) We can generate them via windows command line or PuttyKey Gen:<br><br>
+									
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/sshCmd.png" alt=""><br>								
+							</div>
+
+						</div>
+						<div class="media">						
+							<div class="d-flex">								
+								<img src="img/technical/sshPutty.png" alt="">
+							</div>																
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>Put the files under:<br><br>									
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/sshFiles.png" alt=""><br>								
+							</div>
+
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>Put the PUBLIC (not private) context to remote:<br><br>
+									
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/sshRemote.png" alt=""><br>								
+							</div>
+
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>Add key to local settings as well over GitBash:<br><br>
+									
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/sshBash.png" alt=""><br>								
+							</div>
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>Finally, if we want to use SourceTree, we should add the key to it also:<br><br>
+									
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/sshSrcTree.png" alt=""><br>								
+							</div>
+
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+
+									<br><br>
+									
+									<h2>Git Bash</h2>										
 									$ git init
 									<br>$ git status
 									<br>$ git add .
