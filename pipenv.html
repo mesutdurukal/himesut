@@ -57,25 +57,24 @@
 						<div class="media">							
 							<div class="media-body">								
 								<div class="personal_text">									
-									<h1 class="mb-4">Run PyTest in VS Code</h1>									
+									<h1 class="mb-4">Running PyTest Environment Independently</h1>									
 								</div>
 							</div>							
 						</div>
 
 						<div class="media">														
 							<div class="d-flex">
-								<img src="img/technical/pytest.gif" alt="">
+								<img src="img/technical/independent.gif" alt="">
 							</div>
 							<div class="media-body">
 								<div class="personal_text">
-									<br><h2>1. Create Tests</h2>	
-									<div style="font-size:12px;">
-										After tests are implemented, we will run them. For this purpose, they have to be discovered as tests. By default, it is configured to find methods starting by “test_” are regarded as test cases. But this can be customized.
+									Let's remember the famous saying: "It is running on my machine." Sometimes, we implement test code and everything runs perfectly. But when we move to another machine or maybe on Pipelines, we are missing lots of libraries and dependencies. Here is the way to manage it. <br><br><h2>1. Make paths relative</h2>	
+									<div style="font-size:14px;">
+										Paths can make trouble since clones can be placed in different folders. Two most possible things we may use are locating a file relatively to the root path and relatively to the working directory.<br>
+										<p style="color:red;">path=os.path.join(os.path.expanduser('~'),   'somefile')
+											path=os.path.join(os.path.dirname(__file__), 'somefile')</p>
 									</div>	
-									<br><h2>2. Enable Test Framework</h2>	
-									<div style="font-size:12px;">
-										The framework that we use should be enabled to trigger test cases. (either unittest or pytest) On VSCode, this can be done over Command Palette (Ctrl + Shift + P): Python Configure Tests
-									</div>																			
+																										
 								</div>
 							</div>
 					
@@ -83,94 +82,37 @@
 						<div class="media">																					
 							<div class="media-body">
 								<div class="personal_text">	
-									<br><h2>3. Discover Tests</h2>	
-									<div style="font-size:12px;">
-										This can be done over Command Palette (Ctrl + Shift + P): Python Discover Tests
+									<h2>2. Manage Dependencies</h2>	
+									<div style="font-size:14px;">
+										To install dependencies automatically, we can use pipenv, which ensures a stable environment with accurate versions. In the project directory, first install pipenv:
+										<p style="color:red;"> pip install --user pipenv<br> </p>
+										
+										Then we install the dependencies with pipenv:
+										<p style="color:red;"> pipenv install requests<br> </p>
+										
+										A pipfile will be created in the project afterwards:										
 									</div>											
 								</div>
 							</div>
 					
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/detect.png" alt="">
-							</div>						
 						</div>	
-						<div class="media">																					
-							<div class="media-body">
-								<div class="personal_text">	
-									<br><h2>4. Run/Debug</h2>	
-									<div style="font-size:12px;">
-										We can run or debug: Console outputs are not captured by default. (We should trigger over cmd line with -s parameters to capture all)
-
-									</div>											
-								</div>
-							</div>
-					
-						</div>
-						<div class="media">
+						<div class="media">														
 							<div class="d-flex">
-								<img src="img/technical/rundebug.png" alt="">
-							</div>						
+								<img src="img/technical/pipenv.png" alt="">
+							</div>
+							
+					
 						</div>	
-						<div class="media">																					
+						<div class="media">														
+							
 							<div class="media-body">
-								<div class="personal_text">	
-									<br><h2>5. Test Fixture and Marks</h2>	
-									<div style="font-size:12px;">
-										When test class extends TestBase, Test Fixture is triggered since autorun is selected as true. In this way; before and after test methods are executed. One more thing is groups: pytest.mark. In this way you can run a specific group. (- m parameter) After registering marks on pytest.ini, you can select them in the execution:
-									</div>											
+								<div class="personal_text">
+									Then the only thing we have to do is to run: <p style="color:red;">pipenv run pytest</p>
+									
 								</div>
 							</div>
 					
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/markings.png" alt="">
-							</div>						
-						</div>		
-						<div class="media">																					
-							<div class="media-body">
-								<div class="personal_text">	
-									<br><h2>6. Allure Reporting and Decorators</h2>	
-									<div style="font-size:12px;">
-										Allure cmdline tool should be installed. (allure –version should work)<br>
-										Test steps are added in the code. For this, allure-pytest should be installed. (NOT pytest-allure-adaptor)
-
-									</div>											
-								</div>
-							</div>
-					
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/decorator.png" alt="">
-							</div>						
-						</div>	
-						<div class="media">																					
-							<div class="media-body">
-								<div class="personal_text">	
-									<div style="font-size:12px;">
-										<br>Execute pytest with --alluredir parameter: All files are collected under the directory that we showed.
-										<br>After that, server is started to show the graps:
-
-									</div>											
-								</div>
-							</div>
-					
-						</div>
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/technical/pytestallure.png" alt="">
-							</div>						
-						</div>
-						<div class="media">
-							<div class="media-body">
-								<br><div class="personal_text">
-									<a href="pipenv.html" class="btn-custom"> Dependency Management for Python <span class="ion-ios-arrow-forward"></span></a><br>												
-								</div>
-							</div>							
-						</div>						
+						</div>							
 						
 					</div>
 				</div>
