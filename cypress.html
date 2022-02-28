@@ -164,23 +164,68 @@
 							<div class="media-body">
 								<div class="personal_text">									
 									<h2 class="mb-4">Test Code</h2>
-									Cypress element recognition is based on css selectors. After locators are defined, the main cypress commands will be executed with assertions.
-									
+									Cypress element recognition is based on css selectors. After locators are defined, the main cypress commands will be executed with assertions.<br>
+									<h4 class="mb-4"><br>Locators</h4>
+									parent tagname.classname {i.e: input.search-keyword}<br>
+									parent tagname[attribute=value] {i.e: input[type=’search’]}<br>
+									<br>We can narrow the selection criteria with element attributes:<br>
+									<ul>
+										<li> :contains("Text")</li>
+										<li>:visible </li> 
+										<li>:nth-child(N)</li>								
+									</ul>
+									<h4 class="mb-4"><br>Commands</h4>
 									Main cypress commands are:
-									<ul class="nav navbar-nav menu_nav ml-auto">
-										<li class="nav-item active">cy.visit</li>
-										<li class="nav-item active">cy.wait</li> 
-										<li class="nav-item active">cy.log vs console.log</li> 	
-										<li class="nav-item active">cy.wrap </li> 	
-										<li class="nav-item active">cy.get.then</li> 	
-										<li class="nav-item active">cy.type</li> 	
-										<li class="nav-item active">cy.get.find.eq</li> 	
-										<li class="nav-item active">cy.contains.click</li> 	
-										<li class="nav-item active">cy.get.find.each</li> 	
-										<li class="nav-item active">cy.as</li>									
+									<ul>
+										<li class="nav-item active">cy.visit, cy.go(‘back’), cy.url()</li>
+										<li class="nav-item active">cy.wait, </li>
+										<li class="nav-item active">cy.log, console.log, </li>
+										<li class="nav-item active">cy.wrap, </li>
+										<li class="nav-item active">cy.get, cy.contains</li>
+										<ul>
+											<li class="nav-item active">	.then</li>
+											<li class="nav-item active">	.find</li>
+											<ul>
+												<li class="nav-item active">		.eq</li>
+												<li class="nav-item active">		.each</li>
+											</ul>
+											<li class="nav-item active">	.clear, .type,</li>
+											<li class="nav-item active">	.click, </li>
+											<li class="nav-item active">	.check, .uncheck, .select</li>
+											<li class="nav-item active">	.as</li>
+											<li class="nav-item active">	.invoke</li>
+												<ul>
+												<li class="nav-item active">		(‘removeAttr’,’target’)</li>
+												<li class="nav-item active">		(‘show’)</li>
+												</ul>
+											<li class="nav-item active">	.next</li>
+										</ul>
+										<li class="nav-item active">cy.on(Events,(str)=> {})</li>
+										<ul>
+											<li class="nav-item active">	‘Window:alert’</li>
+										</ul>
 									</ul>
 									<br>
-									A sample very basic test would look like:
+									Element Attributes can be read such as:
+									<ul>
+										<li class="nav-item active">.text()</li>
+										<li class="nav-item active">.length</li>
+										<li class="nav-item active">.prop</li>
+									</ul>
+									<h4 class="mb-4"><br>Assertions</h4>
+									Mocha assertions are used to check expected results. Some of them are:
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/assertions.png" alt="">
+							</div>
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><br>A Sample test would look like:
 								</div>
 							</div>							
 						</div>
