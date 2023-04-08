@@ -206,7 +206,7 @@
 										They are used when you create your own package. They are not require in the project, but the project can only be used with this peer dependency. This means, the Host having the project that we are developing, should also have the peer dependency. We can consider this as a compatibility. If there is a version (you might have a look into semantic versioning) issue, you will be notified. (it still runs though)
 									</ul>
 									
-									After the dependency is installed, we are ready to use the served functions. But first we can register those function calls as the custom commands: <br><code>import {registerCommand} from 'mesutplugin'<br>registerCommand()</code><br><br>
+									After the dependency is installed, we are ready to use the served functions. But first we can register those function calls as the custom commands in the support file: <br><code>import {registerCommand} from 'mesutplugin'<br>registerCommand()</code><br><br>
 									
 									Now, instead of implementing all the steps from scratch, we can just call the relevant functions:
 									
