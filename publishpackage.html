@@ -196,16 +196,6 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">															
-									<h2>Using the Package in Other Projects</h2>													
-									After the package is available in npm repo, it can be downloaded into any projects by <code>npm i mesutplugin</code>. i is for install, so this command will install the dependency. We will see that package & package.lock files are updated and node_modules folder includes the downloaded dependency. In the package.lock file, we can see the npm repo addresses (registry/nexus) which we discussed in the first part. You may realize in some dependencies, there is an '@' sign (scoped packages: see an example below), which indicates that this dependency belongs to a group. Other than the dependencies, consumed by the project, there are others:
-									
-									<ul>
-										<li>Dev Dependencies</li>
-										They are installed on npm install on a directory that contains package.json, unless you pass the --production flag or if the NODE_ENV=production environment variable is set. But they are not installed on npm install "$package" on any other directory, unless you give it the --dev option.
-										<li>Peer Dependencies</li>	
-										They are used when you create your own package. They are not require in the project, but the project can only be used with this peer dependency. This means, the Host having the project that we are developing, should also have the peer dependency. We can consider this as a compatibility. If there is a version (you might have a look into semantic versioning) issue, you will be notified. (it still runs though)
-									</ul>
-									
 									After the dependency is installed, we are ready to use the served functions. But first we can register those function calls as the custom commands in the support file: <br><code>import {registerCommand} from 'mesutplugin'<br>registerCommand()</code><br><br>
 									
 									Now, instead of implementing all the steps from scratch, we can just call the relevant functions:
