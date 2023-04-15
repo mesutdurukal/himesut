@@ -54,34 +54,51 @@
            	<div class="container box_1620">
            		<div class="banner_inner d-flex align-items-center">
 					<div class="banner_content">
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<h1 class="mb-4">Testing APIs with GraphQL</h1>									
+									<h2 class="mb-4">What is GraphQL</h2>									
+									GraphQL is a query language for APIs. As we know, an API is an application protocol interface which returns responses to queries with a code and context. Previously RESTful APIs were commonly used. As always chasing for a better efficiency, the API development world welcomed a new query language: GraphQL.<br><br>
+									
+									Suppose that I have an API, over which I can query movies. Each movie entity has several attributes (director, cast, year, language, location, genre, synopsis, etc.). If I am interested in reading the directors of all movies, synopsis info would not contribute to my purpose. Yes, you got the idea: if we pul only director attribute for each movie instead of the whole entity, we save a lot of data transfer and speed. See how it works below. (<a href="https://graphql.org/">refer</a>)
+									
+								</div>
+							</div>							
+						</div>
+
+						<video width="500px" height="270px"
+							controls="controls"/>							 
+							<source src="img/technical/graphiql.mp4"
+								type="video/mp4">
+						</video>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><h2 class="mb-4">Benefits</h2>
+									So the key advantages are:
+									<ul>
+										<li>Ask for what you want! No need to pull all attributes</li>
+										<li>Get many resurces in a single request: No need to query all entities one by one.</li>	
+									</ul>
+									<br><h2 class="mb-4">Testing</h2>
+									As we have already seen in the video above, we should set what we are interested in, in our query. A sample Cypress implementation for getting jobs with a keyword in a location would look like:<br><br>
+									
+								</div>
+							</div>							
+						</div>
 						<div class="media">
 							<div class="d-flex">
-								<img src="img/technical/api.png" alt="">
-							</div>
-							<div class="media-body">
-								<div class="personal_text">
-								<p><a href="restful.html" class="btn-custom"> 1. Restful APIs <span class="ion-ios-arrow-forward"></span></a></p>						
-								<p> <a href="jersey.html" class="btn-custom"> 2. Jersey with Jackson<span class="ion-ios-arrow-forward"></span></a></p>				
-								<p> <a href="apache.html" class="btn-custom"> 3. Apache HttpClient<span class="ion-ios-arrow-forward"></span></a></p>				
-								<p> <a href="codingextra.html" class="btn-custom"> 4. Awaitility <span class="ion-ios-arrow-forward"></span></a></p>									
-								<p> <a href="graphql.html" class="btn-custom"> 5. GraphQL <span class="ion-ios-arrow-forward"></span></a></p>									
-								</div>
-							</div>
-							
+								<img src="img/technical/gqcypress.png" alt="">
+							</div>								
 						</div>
+						
 					</div>
 				</div>
             </div>
         </section>
         <!--================End Home Banner Area =================-->
-        
-       
-       
-        
-        
-        
-        
-        
+
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
