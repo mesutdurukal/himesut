@@ -68,7 +68,7 @@
 										<li>Publish</li>
 										<li>Usage in Other Projects</li>
 									</ul>
-									<h2>Npm account</h2>													
+									<h2>1. Npm init</h2>													
 									npm is the node package manager. (<a href="javascript.html">see</a>) Packages can be queries via <a href="https://www.npmjs.com/">repo</a> or <a href="https://registry.npmjs.org/">api</a>.<br><br>
 									
 									Since npm repo may sometimes take too long, and you may not wanna just pay the 7 dollars/month to host your packages in the official npm private registry; you can configure npm settings to use a private repo which basically mirrors the global npm repo. In this way, you use a proxy in your own network. This is done by Nexus settings.<br><br>
@@ -87,8 +87,7 @@
 							<div class="media-body">
 								<div class="personal_text">									
 									After the settings are done and having an account on npm, the command <code>npm login</code> is executed. This will forward you to the browser to login. After login is completed, you can verify your session via <code>npm whoami</code>.	<br><br>
-									<h2>Initialize the Project</h2>													
-									<code>npm init</code> command starts creating a package.json file by asking to fill in several attributes. You can pass -y flag to set all fields to default values. Eventually when the package is publisg these attributes will be seen on the npm repo like author, version and dependency values. A sample package.json file would look like: <br><br>
+									After npm account is ready, <code>npm init</code> command starts creating a package.json file by asking to fill in several attributes. You can pass -y flag to set all fields to default values. Eventually when the package is publisg these attributes will be seen on the npm repo like author, version and dependency values. A sample package.json file would look like: <br><br>
 									
 								
 								</div>
@@ -103,7 +102,7 @@
 							<div class="media-body">
 								<div class="personal_text">									
 									
-									<h2>Implementation with Typescript</h2>													
+									<h2>2. Implementation with Typescript</h2>													
 									First get typescript since we want to use it as the programming language: <code>npm install --save-dev typescript</code>. We will use it only for development purposes, so we can add it as a dev-dependency (-D flag does the same). We will see dependency types below. After we add the dependency, it should be in the package.json:
 								</div>
 							</div>							
@@ -137,8 +136,9 @@
 
 									}
 									</code><br><br>
+									<h4>Index File</h4>	
 									When we are done, let's create an index file in the same directory: src/index.ts. In the index file all funtions are declared: <code>export * from './my_functions'</code>. Notice that extension is not needed to address the file here. One more reminder is, these files are generally collected under a reasonably named folder such as src, dist or lib.<br><br>
-									<h2>Compiling TS</h2>													
+									<h2>3. Compiling TS</h2>													
 									As we discussed in another <a href="javascript.html">blog</a>, TS code needs to be compiled. We will use tsc command for this, but first let's initialize: <code>npx tsc –init </code>. This will create a tsconfig file for us. One example is below:
 								</div>
 							</div>							
@@ -151,7 +151,7 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">															
-									Be aware the included and excluded folders. OutDir can be set to either a different or the same folder as src. Now, we are ready to compile! <code>npx tsc</code>. After compiling we will see the generated files in the OutDir. You may have some errors like unresolved cy commands. Since you are running outside the cypress folder, it is not in the relevant namescape. But no worries, the dependency will be imported into some other projects and already be executed with Cypress.
+									Be aware the included and excluded folders. OutDir can be set to either a different or the same folder as src. (but of course different is better) Now, we are ready to compile! <code>npx tsc</code>. After compiling we will see the generated files in the OutDir. You may have some errors like unresolved cy commands. Since you are running outside the cypress folder, it is not in the relevant namescape. But no worries, the dependency will be imported into some other projects and already be executed with Cypress.
 								</div>
 							</div>							
 						</div><br>
@@ -163,8 +163,8 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">															
-									<h2>Publish the Package</h2>													
-									As we generate the compiled files, we will publish our package. First let's address our entry file in the package.json file. <code>"main": "src/index.js"</code>. Beware that it is not .ts anymore, since we compiled it is js file now. Now we can do <code>npm publish</code>. If you set the package name which is already taken, you will get an error. (it might be fixed later, but at first it was confusing to me, i got 403 when i tried to publish a conflicting package name.)									
+									<h2>4. Publish the Package</h2>													
+									Since compiled files are under the output folder shown in tsconfig, we can exclude src folder from the published package. For this purpose, .npmignore file is used. Now we are ready for the publish. First let's address our entry file in the package.json file. <code>"main": "src/index.js"</code>. Beware that it is not .ts anymore, since we compiled it is js file now. Now we can do <code>npm publish</code>. If you set the package name which is already taken, you will get an error. (it might be fixed later, but at first it was confusing to me, i got 403 when i tried to publish a conflicting package name.)									
 								</div>
 							</div>							
 						</div><br>
@@ -176,8 +176,10 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">															
-									<h2>Using the Package in Other Projects</h2>													
-									After the package is available in npm repo, it can be downloaded into any projects by <code>npm i mesutplugin</code>. i is for install, so this command will install the dependency. We will see that package & package.lock files are updated and node_modules folder includes the downloaded dependency. In the package.lock file, we can see the npm repo addresses (registry/nexus) which we discussed in the first part. You may realize in some dependencies, there is an '@' sign (scoped packages: see an example below), which indicates that this dependency belongs to a group. Other than the dependencies, consumed by the project, there are others:
+									<h2>5. Using the Package in Other Projects</h2>													
+									After the package is available in npm repo, it can be downloaded into any projects by <code>npm i mesutplugin</code>. i is for install, so this command will install the dependency. We will see that package & package.lock files are updated and node_modules folder includes the downloaded dependency. In the package.lock file, we can see the npm repo addresses (registry/nexus) which we discussed in the first part.<br> <br> 
+									<h4>Scoped Packages</h4>	
+									You may realize in some dependencies, there is an '@' sign (scoped packages: see an example below), which indicates that this dependency belongs to a group. For publishing scoped packages, you have to pay. [402 You must sign up for private packages : @org1/pkgname …] Other than the dependencies, consumed by the project, there are others:
 									
 									<ul>
 										<li>Dev Dependencies</li>
@@ -196,7 +198,12 @@
 						<div class="media">							
 							<div class="media-body">
 								<div class="personal_text">															
-									After the dependency is installed, we are ready to use the served functions. But first we can register those function calls as the custom commands in the support file: <br><code>import {registerCommand} from 'mesutplugin'<br>registerCommand()</code><br><br>
+									
+									<h4>Cypress Custom Commands</h4>	
+									After the dependency is installed, we are ready to use the served functions. But first we can register those function calls as the custom commands in the commands file: <br><code>import {registerCommand} from 'mesutplugin'<br>registerCommand()</code> <br><br>
+									[REMINDER: Files and folder are pointed in config file. commands file is for custom commands. Index file is for before,beforeEach and all fixtures. Plugins file is for enabling some auto actions. Inside commands file, fixture can be written as well.]
+
+<br><br>
 									
 									Now, instead of implementing all the steps from scratch, we can just call the relevant functions:
 									
