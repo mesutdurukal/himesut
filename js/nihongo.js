@@ -6,7 +6,7 @@ function getAnswer() {
         .then(response => response.json())
         .then((data) => {
             // Assuming 'data' is the map/object returned from the server
-            const container = document.getElementById('stats');
+            const container = document.getElementById('result');
             container.innerHTML = ''; // Clear previous contents
 
             // Iterate over each entry in the object
@@ -26,6 +26,8 @@ function getAnswer() {
             document.getElementById("result").textContent = "ERROR";
         });
 }
+
+function updateScores(){}
 
 function getQuestion(){
     fetch(hostIp + 'getQuestion') // Use your actual endpoint here
