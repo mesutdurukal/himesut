@@ -1,8 +1,15 @@
-const hostIp = "http://192.168.1.124:8080/";
+//const hostIp = "http://192.168.1.124:8080/";
+const hostIp = "https://fbfb-175-177-41-59.ngrok-free.app/";
+const requestOptions = {
+  method: "GET",
+  headers: new Headers({"ngrok-skip-browser-warning": "test"}),
+  redirect: "follow"
+};
 
 function getAnswer() {
+
     const userInput = document.getElementById("answer").value;
-    fetch(hostIp + 'getAnswer' + "?input=" + userInput) // Use your actual endpoint here
+    fetch(hostIp + 'getAnswer' + "?input=" + userInput, requestOptions) // Use your actual endpoint here
         .then(response => response.json())
         .then((data) => {
             // Assuming 'data' is the map/object returned from the server
@@ -56,10 +63,11 @@ function getAnswer() {
 }
 
 function getQuestion(){
+
     const label = document.getElementById('status');
     label.style.color = 'black';
     label.textContent = `Status:`;
-    fetch(hostIp + 'getQuestion') // Use your actual endpoint here
+    fetch(hostIp + 'getQuestion',requestOptions ) // Use your actual endpoint here
         .then(response => response.json())
         .then((data) => {
             // Assuming 'data' is the map/object returned from the server
@@ -127,7 +135,8 @@ function getQuestion(){
 }
 
 function getStats(){
-    fetch(hostIp + 'getStats') // Use your actual endpoint here
+
+    fetch(hostIp + 'getStats', requestOptions) // Use your actual endpoint here
         .then(response => response.json()) // Parse the JSON from the response
         .then(data => {
             // Assuming 'data' is the map/object returned from the server
