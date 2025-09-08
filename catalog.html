@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Talks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .chips {
+            margin-bottom: 20px;
+        }
+        .chip {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 2px;
+            background-color: #eee;
+            border-radius: 16px;
+            cursor: pointer;
+            border: none;
+        }
+        .chip[aria-pressed="true"] {
+            background-color: #4285f4;
+            color: white;
+        }
+        .category-section {
+            margin-bottom: 30px;
+        }
+        .talk {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #4285f4;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tech Talks</h1>
+
+<div class="chips" role="toolbar" aria-label="Category filters" id="categoryChips">
+    <!-- chips will be injected here -->
+</div>
+
+<div id="talksContainer">
+    <!-- talks will be injected here -->
+</div>
+
+<script>
+    const DATA = {
+        "AB Testing": [
+            {
+                title: "Managing Experiments and Behavior Dynamically with Proctor",
+                speakers: ["Matt Schemmel", "Tom Bergman"],
+                event: "@IndeedEng Talks",
+                city: "Austin",
+                year: 2013,
+                url: "https://www.youtube.com/watch?v=Q1T5J0KXUwY"
+            }
+        ],
+        "Exploratory Testing": [
+
+        ],
+        "Test Automation Patterns": [
+
+        ]
+    };
+
+    const chipsContainer = document.getElementById('categoryChips');
+    const talksContainer = document.getElementById('talksContainer');
+
+    // generate category chips
+    const categories = Object.keys(DATA);
+    const allChip = document.createElement('button');
+    allChip.className = 'chip';
+    allChip.dataset.cat = 'all';
+    allChip.ariaPressed = 'true';
+    allChip.innerText = 'All';
+    chipsContainer.appendChild(allChip);
+
+    categories.forEach(cat => {
+        const chip = document.createElement('button');
+        chip.className = 'chip';
+        chip.dataset.cat = cat;
+        chip.innerText = cat;
+        chipsContainer.appendChild(chip);
+    });
+
+    // generate talks per category
+    function renderTalks(filterCat = 'all') {
+        talksContainer.innerHTML = '';
+        categories.forEach(cat => {
+            if(filterCat !== 'all' && filterCat !== cat) return;
+
+            const section = document.createElement('div');
+            section.className = 'category-section';
+            const h2 = document.createElement('h2');
+            h2.innerText = cat;
+            section.appendChild(h2);
+
+            DATA[cat].forEach(talk => {
+                const div = document.createElement('div');
+                div.className = 'talk';
+                const speakers = talk.speakers.join(', ');
+                div.innerHTML = `<strong>${talk.title}</strong> — ${speakers}, ${talk.event}, ${talk.city}, ${talk.year}${talk.url ? `, <a href="${talk.url}" target="_blank">Watch</a>` : ''}`;
+                section.appendChild(div);
+            });
+
+            talksContainer.appendChild(section);
+        });
+    }
+
+    renderTalks();
+
+    // chip click handling
+    chipsContainer.addEventListener('click', e => {
+        if(e.target.classList.contains('chip')){
+            document.querySelectorAll('.chip').forEach(c => c.ariaPressed = 'false');
+            e.target.ariaPressed = 'true';
+            renderTalks(e.target.dataset.cat);
+        }
+    });
+</script>
+
+</body>
+</html>
