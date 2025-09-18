@@ -75,7 +75,7 @@
 <!-- Leaflet JS -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
-    const map = L.map('map').setView([35.6895, 139.6917], 7);
+    const map = L.map('map').setView([35.6895, 139.6917], 4);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
@@ -83,7 +83,43 @@
 
     // Your travel locations
     const locations = [
-      {
+        {
+            coords: [35.541991689504215, 139.50423711053188], // Tana
+            thumb: 'img/elif/tana.jpg',
+            full: 'img/elif/tana.jpg',
+            title: 'Tana Park, Japan - 15.12.2024',
+            date: '2024-12-15'
+        },{
+            coords: [35.52435375078827, 139.49456558315546], // Gendaika
+            thumb: 'img/elif/gendaika.jpg',
+            full: 'img/elif/gendaika.jpg',
+            title: 'Gendaika Park, Japan - 25.12.2024',
+            date: '2024-12-25'
+        },{
+            coords: [35.56747585201884, 139.50343395458484], // Furusato
+            thumb: 'img/elif/furusato.jpg',
+            full: 'img/elif/furusato.jpg',
+            title: 'Furusato Village, Japan - 01.02.2025',
+            date: '2025-02-01'
+        },{
+            coords: [35.50425245591661, 139.50971608156632], // Miho
+            thumb: 'img/elif/miho.jpg',
+            full: 'img/elif/miho.jpg',
+            title: 'Miho Forest, Japan - 16.02.2025',
+            date: '2025-02-16'
+        },{
+            coords: [35.550848094294516, 139.58074772574815], // Otsuka
+            thumb: 'img/elif/otsuka.jpg',
+            full: 'img/elif/otsuka.jpg',
+            title: 'Otsuka Saikachido Archeological Park, Japan - 09.03.2025',
+            date: '2025-03-09'
+        },{
+            coords: [35.869476161626906, 138.3271180650051], // Risonare
+            thumb: 'img/elif/risonaremarch.jpg',
+            full: 'img/elif/risonaremarch.jpg',
+            title: 'Risonare, Japan - 25.03.2025',
+            date: '2025-03-25'
+        },{
         coords: [35.915008523342955, 138.4433633650074], // Moegi
         thumb: 'img/elif/Moegi.jpg',
         full: 'img/elif/Moegi.jpg',
@@ -293,7 +329,13 @@
         full: 'img/elif/Takachiho Farm.jpg',
         title: 'Takachiho Farm, Japan - 29.08.2025',
         date: '2025-08-29'
-      }
+      },{
+            coords: [43.607482398677924, 142.46976404130305], // Hokkaido
+            thumb: 'img/elif/hokkaido.jpg',
+            full: 'img/elif/hokkaido.jpg',
+            title: 'Hokkaido, Japan - 20.09.2025',
+            date: '2025-09-20'
+        }
     ];
 
     // Sort by date
