@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df95b29f-f2f9-44d0-a815-7bdf8df1aaa7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/img/elif/yamanashi.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records.html" beforeDir="false" afterPath="$PROJECT_DIR$/records.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elif.html" beforeDir="false" afterPath="$PROJECT_DIR$/elif.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +47,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Workspace\himesut\img\elif" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/elif" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -79,7 +82,8 @@
       <workItem from="1757368847917" duration="764000" />
       <workItem from="1758197866115" duration="3408000" />
       <workItem from="1758300157743" duration="48000" />
-      <workItem from="1758345364959" duration="405000" />
+      <workItem from="1758345364959" duration="1667000" />
+      <workItem from="1758622069609" duration="263000" />
     </task>
     <servers />
   </component>
