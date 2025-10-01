@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df95b29f-f2f9-44d0-a815-7bdf8df1aaa7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img/elif/yamanashi.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/elif.html" beforeDir="false" afterPath="$PROJECT_DIR$/elif.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,8 @@
       <workItem from="1758197866115" duration="3408000" />
       <workItem from="1758300157743" duration="48000" />
       <workItem from="1758345364959" duration="1667000" />
-      <workItem from="1758622069609" duration="263000" />
+      <workItem from="1758622069609" duration="627000" />
+      <workItem from="1759359444486" duration="306000" />
     </task>
     <servers />
   </component>
