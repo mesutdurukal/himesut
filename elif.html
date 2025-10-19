@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Elif's Travel History</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Elif's Travel History</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <style>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -24,7 +24,7 @@
     }
     #map {
       width: 100%;
-      height: 400px; /* fixed height for the map */
+      height: 400px;
       min-height: 300px;
     }
     #timeline {
@@ -81,268 +81,70 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Your travel locations
+    // Elif's travel locations
     const locations = [
-        {
-            coords: [35.541991689504215, 139.50423711053188], // Tana
-            thumb: 'img/elif/tana.jpg',
-            full: 'img/elif/tana.jpg',
-            title: 'Tana Park, Japan - 15.12.2024',
-            date: '2024-12-15'
-        },{
-            coords: [35.52435375078827, 139.49456558315546], // Gendaika
-            thumb: 'img/elif/gendaika.jpg',
-            full: 'img/elif/gendaika.jpg',
-            title: 'Gendaika Park, Japan - 25.12.2024',
-            date: '2024-12-25'
-        },{
-            coords: [35.56747585201884, 139.50343395458484], // Furusato
-            thumb: 'img/elif/furusato.jpg',
-            full: 'img/elif/furusato.jpg',
-            title: 'Furusato Village, Japan - 01.02.2025',
-            date: '2025-02-01'
-        },{
-            coords: [35.50425245591661, 139.50971608156632], // Miho
-            thumb: 'img/elif/miho.jpg',
-            full: 'img/elif/miho.jpg',
-            title: 'Miho Forest, Japan - 16.02.2025',
-            date: '2025-02-16'
-        },{
-            coords: [35.550848094294516, 139.58074772574815], // Otsuka
-            thumb: 'img/elif/otsuka.jpg',
-            full: 'img/elif/otsuka.jpg',
-            title: 'Otsuka Saikachido Archeological Park, Japan - 09.03.2025',
-            date: '2025-03-09'
-        },{
-            coords: [35.869476161626906, 138.3271180650051], // Risonare
-            thumb: 'img/elif/risonaremarch.jpg',
-            full: 'img/elif/risonaremarch.jpg',
-            title: 'Risonare, Japan - 25.03.2025',
-            date: '2025-03-25'
-        },{
-        coords: [35.915008523342955, 138.4433633650074], // Moegi
-        thumb: 'img/elif/Moegi.jpg',
-        full: 'img/elif/Moegi.jpg',
-        title: 'Moegi Village, Japan - 27.03.2025',
-        date: '2025-03-27'
-      },{
-        coords: [35.869476161626906, 138.3271180650051], // Risonare
-        thumb: 'img/elif/RISONARE.jpg',
-        full: 'img/elif/RISONARE.jpg',
-        title: 'Risonare, Japan - 28.03.2025',
-        date: '2025-03-28'
-      },{
-        coords: [35.924795334309565, 138.418777839872], // Seisen-ryo
-        thumb: 'img/elif/Seisen-ryo.jpg',
-        full: 'img/elif/Seisen-ryo.jpg',
-        title: 'Seisen-ryo, Japan - 28.03.2025',
-        date: '2025-03-28'
-      },{
-        coords: [35.91638733083361, 138.3076013975429], // 鹿の池
-        thumb: 'img/elif/鹿の池.jpg',
-        full: 'img/elif/鹿の池.jpg',
-        title: '鹿の池, Japan - 02.04.2025',
-        date: '2025-04-02'
-      },{
-        coords: [35.82220965883314, 138.3140600245238], // 神宮川の桜並木
-        thumb: 'img/elif/神宮川の桜並木.jpg',
-        full: 'img/elif/神宮川の桜並木.jpg',
-        title: '神宮川の桜並木, Japan - 08.04.2025',
-        date: '2025-04-08'
-      },{
-        coords: [26.508171, 127.858020], // Okinawa
-        thumb: 'img/elif/okinawa.jpg',
-        full: 'img/elif/okinawa.jpg',
-        title: 'Okinawa, Japan - 14.04.2025',
-        date: '2025-04-14'
-      },
-      {
-        coords: [34.638773136375505, 138.8965828675113], // Shimoda
-        thumb: 'img/elif/shimoda.jpg',
-        full: 'img/elif/shimoda.jpg',
-        title: 'Shimoda, Japan - 25.04.2025',
-        date: '2025-04-25'
-      },
-      {
-        coords: [34.979446625376575, 139.12579022980182], // Komuroyama
-        thumb: 'img/elif/Komuroyama.jpg',
-        full: 'img/elif/Komuroyama.jpg',
-        title: 'Komuroyama, Japan - 26.04.2025',
-        date: '2025-04-26'
-      },
-      {
-        coords: [35.196635108034435, 139.6121112863694], // Nagai Uminote Park Soleil Hill
-        thumb: 'img/elif/Nagai Uminote Park Soleil Hill.jpg',
-        full: 'img/elif/Nagai Uminote Park Soleil Hill.jpg',
-        title: 'Nagai Uminote Park Soleil Hill, Japan - 03.05.2025',
-        date: '2025-05-03'
-      },
-      {
-        coords: [35.72777690349307, 139.1895653630482], // Akigawa
-        thumb: 'img/elif/akigawa.jpg',
-        full: 'img/elif/akigawa.jpg',
-        title: 'Akigawa, Japan - 08.05.2025',
-        date: '2025-05-08'
-      },
-      {
-        coords: [35.65734051322729, 138.72465070012322], // Kofu Terrace
-        thumb: 'img/elif/kofu.jpg',
-        full: 'img/elif/kofu.jpg',
-        title: 'Kofu, Japan - 13.05.2025',
-        date: '2025-05-13'
-      },{
-        coords: [35.869476161626906, 138.3271180650051], // Risonare
-        thumb: 'img/elif/RISONAREmay.jpg',
-        full: 'img/elif/RISONAREmay.jpg',
-        title: 'Risonare, Japan - 04.06.2025',
-        date: '2025-06-04'
-      },
-      {
-        coords: [34.994920365760834, 138.5224307840013], // Miho no Matsubara
-        thumb: 'img/elif/Miho no Matsubara.jpg',
-        full: 'img/elif/Miho no Matsubara.jpg',
-        title: 'Miho no Matsubara, Japan - 22.06.2025',
-        date: '2025-06-22'
-      },
-      {
-        coords: [34.9811002066865, 138.46638372399576], // Nihondaira Yume Terrace
-        thumb: 'img/elif/Nihondaira Yume Terrace.jpg',
-        full: 'img/elif/Nihondaira Yume Terrace.jpg',
-        title: 'Nihondaira Yume Terrace, Japan - 22.06.2025',
-        date: '2025-06-22'
-      },
-      {
-        coords: [35.63783209116933, 139.85668932843635], // Kasai Marine Park
-        thumb: 'img/elif/kasai.jpg',
-        full: 'img/elif/kasai.jpg',
-        title: 'Kasai Marine Park, Japan - 29.06.2025',
-        date: '2025-06-29'
-      },
-      {
-        coords: [35.64032393117456, 139.8623793244947], // Tokyo Sea Life Park
-        thumb: 'img/elif/TokyoSeaLifePark.jpg',
-        full: 'img/elif/TokyoSeaLifePark.jpg',
-        title: 'Tokyo Sea Life Park, Japan - 29.06.2025',
-        date: '2025-06-29'
-      },{
-        coords: [35.91681989444754, 138.4192705569812], // Doryuno Falls
-        thumb: 'img/elif/Doryuno Falls.jpg',
-        full: 'img/elif/Doryuno Falls.jpg',
-        title: 'Doryuno Falls, Japan - 05.07.2025',
-        date: '2025-07-05'
-      },{
-        coords: [35.78437824237256, 138.3764093687003], // 甲斐こまベリーファーム
-        thumb: 'img/elif/甲斐こまベリーファーム.jpg',
-        full: 'img/elif/甲斐こまベリーファーム.jpg',
-        title: '甲斐こまベリーファーム, Japan - 06.07.2025',
-        date: '2025-07-06'
-      },
-      {
-        coords: [34.98848570260898, 138.9286664324409], // Bamboo Forest Path
-        thumb: 'img/elif/Bamboo Forest Path.jpg',
-        full: 'img/elif/Bamboo Forest Path.jpg',
-        title: 'Bamboo Forest Path, Japan - 19.07.2025',
-        date: '2025-07-19'
-      },{
-        coords: [34.92033916907733, 138.96331029460214], // Wasabi fields of Ikadaba
-        thumb: 'img/elif/Wasabi fields of Ikadaba.jpg',
-        full: 'img/elif/Wasabi fields of Ikadaba.jpg',
-        title: 'Wasabi fields of Ikadaba, Japan - 19.07.2025',
-        date: '2025-07-19'
-      },{
-        coords: [34.79132775363554, 138.7629406632144], // Hotel New Ginsui
-        thumb: 'img/elif/Hotel New Ginsui.jpg',
-        full: 'img/elif/Hotel New Ginsui.jpg',
-        title: 'Nishiizu, Japan - 19.07.2025',
-        date: '2025-07-19'
-      },{
-        coords: [34.78236902700889, 138.76661384816788], // Kameiwa observation point
-        thumb: 'img/elif/Kameiwa observation point.jpg',
-        full: 'img/elif/Kameiwa observation point.jpg',
-        title: 'Kameiwa observation point, Japan - 20.07.2025',
-        date: '2025-07-20'
-      },{
-        coords: [35.925944707731986, 138.40824912452933], // Makiba Park
-        thumb: 'img/elif/Makiba Park.JPG',
-        full: 'img/elif/Makiba Park.JPG',
-        title: 'Makiba Park, Japan - 21.07.2025',
-        date: '2025-07-21'
-      },
-      {
-        coords: [35.19159788363466, 139.6096511039631], // Nagai Uminote Park Soleil Hill
-        thumb: 'img/elif/soleil.jpg',
-        full: 'img/elif/soleil.jpg',
-        title: 'Nagai Uminote Park Soleil Hill, Japan - 26.07.2025',
-        date: '2025-07-26'
-      },
-      {
-        coords: [35.2033792935053, 139.02569517530364], // Hakone
-        thumb: 'img/elif/hakone.jpg',
-        full: 'img/elif/hakone.jpg',
-        title: 'Hakone, Japan - 24.08.2025',
-        date: '2025-08-24'
-      },{
-        coords: [31.721129985830938, 130.62524691134047], // 霧島錦江湾国立公園 重富海岸
-        thumb: 'img/elif/霧島錦江湾国立公園 重富海岸.jpg',
-        full: 'img/elif/霧島錦江湾国立公園 重富海岸.jpg',
-        title: '霧島錦江湾国立公園 重富海岸, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },,{
-        coords: [31.63289310064721, 130.58267489129582], // Sengan-en
-        thumb: 'img/elif/Senganen.jpg',
-        full: 'img/elif/Senganen.jpg',
-        title: 'Sengan-en, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-        coords: [31.174274481620962, 130.58471377922922], // Cape Nagasakibana
-        thumb: 'img/elif/Cape Nagasakibana.jpg',
-        full: 'img/elif/Cape Nagasakibana.jpg',
-        title: 'Cape Nagasakibana, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-        coords: [31.20231605677966, 130.57630887090303], // Southernmost JR Train Station Monument
-        thumb: 'img/elif/Southernmost JR Train Station Monument.jpg',
-        full: 'img/elif/Southernmost JR Train Station Monument.jpg',
-        title: 'Southernmost JR Train Station Monument, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-        coords: [31.225946414066406, 130.54252889183064], // Tosenkyo Ravine Park
-        thumb: 'img/elif/Tosenkyo Ravine Park.jpg',
-        full: 'img/elif/Tosenkyo Ravine Park.jpg',
-        title: 'Tosenkyo Ravine Park, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-        coords: [31.248872489804718, 130.5451622085113], // Lake Ikeda
-        thumb: 'img/elif/Lake Ikeda.jpg',
-        full: 'img/elif/Lake Ikeda.jpg',
-        title: 'Lake Ikeda, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-        coords: [31.25035122996599, 130.5639638728603], //Golden Torii
-        thumb: 'img/elif/Golden Torii.jpg',
-        full: 'img/elif/Golden Torii.jpg',
-        title: 'Golden Torii, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-        coords: [31.85525859194726, 130.87761300600414], //Takachiho Farm
-        thumb: 'img/elif/Takachiho Farm.jpg',
-        full: 'img/elif/Takachiho Farm.jpg',
-        title: 'Takachiho Farm, Japan - 29.08.2025',
-        date: '2025-08-29'
-      },{
-            coords: [43.607482398677924, 142.46976404130305], // Hokkaido
-            thumb: 'img/elif/hokkaido.jpg',
-            full: 'img/elif/hokkaido.jpg',
-            title: 'Hokkaido, Japan - 20.09.2025',
-            date: '2025-09-20'
-        },{
-            coords: [35.7982, 138.315820], // Yamanashi
-            thumb: 'img/elif/yamanashi.jpg',
-            full: 'img/elif/yamanashi.jpg',
-            title: 'Yamanashi, Japan - 22.09.2025',
-            date: '2025-09-22'
-        }
+        { coords: [35.541991689504215, 139.50423711053188], image: 'tana.jpg', title: 'Tana Park, Japan - 15.12.2024' },
+        { coords: [35.52435375078827, 139.49456558315546], image: 'gendaika.jpg', title: 'Gendaika Park, Japan - 25.12.2024' },
+        { coords: [35.56747585201884, 139.50343395458484], image: 'furusato.jpg', title: 'Furusato Village, Japan - 01.02.2025' },
+        { coords: [35.50425245591661, 139.50971608156632], image: 'miho.jpg', title: 'Miho Forest, Japan - 16.02.2025' },
+        { coords: [35.550848094294516, 139.58074772574815], image: 'otsuka.jpg', title: 'Otsuka Saikachido Archeological Park, Japan - 09.03.2025' },
+        { coords: [35.869476161626906, 138.3271180650051], image: 'risonaremarch.jpg', title: 'Risonare, Japan - 25.03.2025' },
+        { coords: [35.915008523342955, 138.4433633650074], image: 'Moegi.jpg', title: 'Moegi Village, Japan - 27.03.2025' },
+        { coords: [35.869476161626906, 138.3271180650051], image: 'RISONARE.jpg', title: 'Risonare, Japan - 28.03.2025' },
+        { coords: [35.924795334309565, 138.418777839872], image: 'Seisen-ryo.jpg', title: 'Seisen-ryo, Japan - 28.03.2025' },
+        { coords: [35.91638733083361, 138.3076013975429], image: '鹿の池.jpg', title: '鹿の池, Japan - 02.04.2025' },
+        { coords: [35.82220965883314, 138.3140600245238], image: '神宮川の桜並木.jpg', title: '神宮川の桜並木, Japan - 08.04.2025' },
+        { coords: [26.508171, 127.858020], image: 'okinawa.jpg', title: 'Okinawa, Japan - 14.04.2025' },
+        { coords: [34.638773136375505, 138.8965828675113], image: 'shimoda.jpg', title: 'Shimoda, Japan - 25.04.2025' },
+        { coords: [34.979446625376575, 139.12579022980182], image: 'Komuroyama.jpg', title: 'Komuroyama, Japan - 26.04.2025' },
+        { coords: [35.196635108034435, 139.6121112863694], image: 'Nagai Uminote Park Soleil Hill.jpg', title: 'Nagai Uminote Park Soleil Hill, Japan - 03.05.2025' },
+        { coords: [35.72777690349307, 139.1895653630482], image: 'akigawa.jpg', title: 'Akigawa, Japan - 08.05.2025' },
+        { coords: [35.65734051322729, 138.72465070012322], image: 'kofu.jpg', title: 'Kofu, Japan - 13.05.2025' },
+        { coords: [35.869476161626906, 138.3271180650051], image: 'RISONAREmay.jpg', title: 'Risonare, Japan - 04.06.2025' },
+        { coords: [34.994920365760834, 138.5224307840013], image: 'Miho no Matsubara.jpg', title: 'Miho no Matsubara, Japan - 22.06.2025' },
+        { coords: [34.9811002066865, 138.46638372399576], image: 'Nihondaira Yume Terrace.jpg', title: 'Nihondaira Yume Terrace, Japan - 22.06.2025' },
+        { coords: [35.63783209116933, 139.85668932843635], image: 'kasai.jpg', title: 'Kasai Marine Park, Japan - 29.06.2025' },
+        { coords: [35.64032393117456, 139.8623793244947], image: 'TokyoSeaLifePark.jpg', title: 'Tokyo Sea Life Park, Japan - 29.06.2025' },
+        { coords: [35.91681989444754, 138.4192705569812], image: 'Doryuno Falls.jpg', title: 'Doryuno Falls, Japan - 05.07.2025' },
+        { coords: [35.78437824237256, 138.3764093687003], image: '甲斐こまベリーファーム.jpg', title: '甲斐こまベリーファーム, Japan - 06.07.2025' },
+        { coords: [34.98848570260898, 138.9286664324409], image: 'Bamboo Forest Path.jpg', title: 'Bamboo Forest Path, Japan - 19.07.2025' },
+        { coords: [34.92033916907733, 138.96331029460214], image: 'Wasabi fields of Ikadaba.jpg', title: 'Wasabi fields of Ikadaba, Japan - 19.07.2025' },
+        { coords: [34.79132775363554, 138.7629406632144], image: 'Hotel New Ginsui.jpg', title: 'Nishiizu, Japan - 19.07.2025' },
+        { coords: [34.78236902700889, 138.76661384816788], image: 'Kameiwa observation point.jpg', title: 'Kameiwa observation point, Japan - 20.07.2025' },
+        { coords: [35.925944707731986, 138.40824912452933], image: 'Makiba Park.JPG', title: 'Makiba Park, Japan - 21.07.2025' },
+        { coords: [35.19159788363466, 139.6096511039631], image: 'soleil.jpg', title: 'Nagai Uminote Park Soleil Hill, Japan - 26.07.2025' },
+        { coords: [35.2033792935053, 139.02569517530364], image: 'hakone.jpg', title: 'Hakone, Japan - 24.08.2025' },
+        { coords: [31.721129985830938, 130.62524691134047], image: '霧島錦江湾国立公園 重富海岸.jpg', title: '霧島錦江湾国立公園 重富海岸, Japan - 29.08.2025' },
+        { coords: [31.63289310064721, 130.58267489129582], image: 'Senganen.jpg', title: 'Sengan-en, Japan - 29.08.2025' },
+        { coords: [31.174274481620962, 130.58471377922922], image: 'Cape Nagasakibana.jpg', title: 'Cape Nagasakibana, Japan - 29.08.2025' },
+        { coords: [31.20231605677966, 130.57630887090303], image: 'Southernmost JR Train Station Monument.jpg', title: 'Southernmost JR Train Station Monument, Japan - 29.08.2025' },
+        { coords: [31.225946414066406, 130.54252889183064], image: 'Tosenkyo Ravine Park.jpg', title: 'Tosenkyo Ravine Park, Japan - 29.08.2025' },
+        { coords: [31.248872489804718, 130.5451622085113], image: 'Lake Ikeda.jpg', title: 'Lake Ikeda, Japan - 29.08.2025' },
+        { coords: [31.25035122996599, 130.5639638728603], image: 'Golden Torii.jpg', title: 'Golden Torii, Japan - 29.08.2025' },
+        { coords: [31.85525859194726, 130.87761300600414], image: 'Takachiho Farm.jpg', title: 'Takachiho Farm, Japan - 29.08.2025' },
+        { coords: [43.607482398677924, 142.46976404130305], image: 'hokkaido.jpg', title: 'Hokkaido, Japan - 20.09.2025' },
+        { coords: [35.7982, 138.315820], image: 'yamanashi.jpg', title: 'Yamanashi, Japan - 22.09.2025' },
+        { coords: [41.036708516, 28.994341], image: 'dolmabahce.jpg', title: 'Dolmabahce, Turkey - 05.10.2025' },
+        { coords: [36.93597006073728, 28.809055610543183], image: 'yuvarlakcay.jpg', title: 'Yuvarlakcay, Turkey - 08.10.2025' },
+        { coords: [36.75201862654743, 28.942028977476028], image: 'gocek.jpg', title: 'Gocek, Turkey - 09.10.2025' },
+        { coords: [36.19985301329672, 29.634930681651696], image: 'kas.jpg', title: 'Kas, Turkey - 10.10.2025' },
+        { coords: [36.14916089655934, 29.590012144516347], image: 'meis.jpg', title: 'Meis, Greece - 11.10.2025' },
+        { coords: [47.50058978716177, 19.051214391333], image: 'budapest.jpg', title: 'Budapest, Hungary - 13.10.2025' },
+        { coords: [40.963396700, 29.05857726467342], image: 'Caddebostan.jpg', title: 'Caddebostan, Turkey - 17.10.2025' }
     ];
+    
+    // Process locations to add date property and full image paths
+    locations.forEach(loc => {
+        // Extract date from title (format: '... - DD.MM.YYYY')
+        const dateMatch = loc.title.match(/(\d{2})\.(\d{2})\.(\d{4})/);
+        if (dateMatch) {
+            const [_, day, month, year] = dateMatch;
+            loc.date = `${year}-${month}-${day}`; // Convert to YYYY-MM-DD format
+        }
+        
+        // Add full image path
+        loc.full = `img/elif/${loc.image}`;
+    });
 
     // Sort by date
     locations.sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -350,18 +152,18 @@
     // Add markers
     const markers = {};
     locations.forEach(loc => {
-      const marker = L.marker(loc.coords).addTo(map);
+        const marker = L.marker(loc.coords).addTo(map);
 
-      marker.bindTooltip(
-        `<img src="${loc.thumb}" style="width:60px;height:auto;border-radius:4px;" />`,
-        { direction: "top", opacity: 0.9 }
-      );
+        marker.bindTooltip(
+            `<img src="${loc.full}" style="width:60px;height:auto;border-radius:4px;" />`,
+            { direction: "top", opacity: 0.9 }
+        );
 
-      marker.bindPopup(
-        `<h3>${loc.title}</h3><img src="${loc.full}" style="width:250px;height:auto;" />`
-      );
+        marker.bindPopup(
+            `<h3>${loc.title}</h3><img src="${loc.full}" style="width:250px;height:auto;" />`
+        );
 
-      markers[loc.title] = marker;
+        markers[loc.title] = marker;
     });
 
     // Group timeline by month
@@ -385,8 +187,8 @@
 
       const tripDiv = document.createElement('div');
       tripDiv.className = 'trip';
-      tripDiv.innerHTML = `<img src="${loc.thumb}" alt="">
-                           <span>${loc.title}</span>`;
+      tripDiv.innerHTML = `<img src="${loc.full}" alt="">
+                          <span>${loc.title}</span>`;
 
       // Click on timeline item -> open popup on map
       tripDiv.addEventListener('click', () => {
@@ -397,5 +199,27 @@
       timelineContent.lastChild.appendChild(tripDiv);
     });
   </script>
+    <!-- Country Flags Section -->
+    <div style="text-align: center; padding: 20px; margin-top: 30px; border-top: 1px solid #eee;">
+        <h3>Countries Visited</h3>
+        <div style="display: flex; justify-content: center; gap: 20px; margin-top: 15px; flex-wrap: wrap;">
+            <div class="flag-icon flag-icon-circle flag-icon-jp" title="Japan" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+            <div class="flag-icon flag-icon-circle flag-icon-tr" title="Turkey" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+            <div class="flag-icon flag-icon-circle flag-icon-gr" title="Greece" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+            <div class="flag-icon flag-icon-circle flag-icon-hu" title="Hungary" style="width: 40px; height: 40px; border-radius: 50%;"></div>
+        </div>
+    </div>
+
+    <!-- Add flag-icons CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
+    <style>
+        .flag-icon {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .flag-icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </body>
 </html>
