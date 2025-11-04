@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../img/favicon.png" type="image/png">
+        <title>Mesut</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../vendors/linericon/style.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="../vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="../vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="../vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158119194-2"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-158119194-2');</script></head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../index.html#talks">Public Speaking</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../index.html#travel">Travel</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<h1 class="mb-4">BDD</h1>
+				BDD is a testing approach, in which scenarios are defined in an easily understandable format. <br>We will implement some cases in BDD format using Cucumber framework for Java. <br>
+							</div>
+							</div>	
+							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/tenor.gif" alt="">
+							</div>
+									
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">																		
+				<br>
+				Apart from Java code, high level scenario descriptions (written in Gherkin syntax) are kept in feature files. <br>To easily manage feature files, first install Cucumber plugin for Eclipse:<br>
+				<br>
+								</div>
+							</div>	
+							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/cucumberPlugin.png" alt="">
+							</div>
+									
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>We will execute these scenarios over both Junit & TestNG. These are the dependencies we need:<br>	
+				
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/cucumberdependencies.png" alt="">
+							</div>
+									
+						</div>
+						
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>We are ready. Lets define our scenarios: Create the feature files. (They can be placed under test/resources):<br>	
+								</div>
+							</div>							
+						</div>
+							<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/feature.png" alt="">
+							</div>
+									
+						</div>
+						
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>As, it can be seen on the image; it is pretty English statements and nothing more. But how can the runner maps these steps to methods? <br>The key is the step definitions. Create a step definitons java file and define all methods corresponding to scenario stages: Given, When & Then. <br>	
+					
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/stepdefinitions.png" alt="">
+							</div>
+									
+						</div>
+						
+												<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>And remember: Our motivation is to test our functions. belly.eat is under test in the above case: <br>	
+					
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/cut.png" alt="">
+							</div>
+									
+						</div>	
+					
+								
+						
+												<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>We have feature files and step definitons. (And of course mainly the class under test) <br>Then the runners are left: First, lets create a runner which fires tests over JUnit: <br>	
+				
+					
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/cucumberjnuit.png" alt="">
+							</div>
+									
+						</div>
+						
+												<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>And, lets create a runner which fires tests over TestNG: <br>	
+					
+					
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/cucumbertestng.png" alt="">
+							</div>
+									
+						</div>
+			
+				<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br>Final Step! Start these two runners. As you noticed, we have some tags. Related cases will be executed! Create gradle tasks for these two runners and start them: <br>
+				gradle myTask2 myTask3 --rerun-tasks --info	<br>
+					
+					
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="img/technical/cucumberrun.png" alt="">
+							</div>
+									
+						</div>
+							<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><h2>Data Driven Testing</h2>
+				In belly feature file, we have defined exactly same scenario with different data. Then why dont we apply Data Driven Testing: <br>
+					
+					
+								</div>
+							</div>							
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/cucumberddt.png" alt="">
+							</div>
+									
+						</div>
+							
+				
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+       
+       
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/popper.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/stellar.js"></script>
+        <script src="../vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="../vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="../js/jquery.ajaxchimp.min.js"></script>
+        <script src="../vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="../vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="../js/mail-script.js"></script>
+        <script src="../js/theme.js"></script>
+    </body>
+</html>

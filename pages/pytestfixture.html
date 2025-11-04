@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../img/favicon.png" type="image/png">
+        <title>Mesut</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../vendors/linericon/style.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="../vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="../vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="../vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158119194-2"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-158119194-2');</script></head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../index.html#talks">Public Speaking</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../index.html#travel">Travel</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">							
+							<div class="media-body">								
+								<div class="personal_text">									
+									<h1 class="mb-4">Run PyTest in VS Code</h1>									
+								</div>
+							</div>							
+						</div>
+
+						
+						<div class="media">	
+							<div class="d-flex">
+								<img src="../img/technical/good.gif" alt="">
+							</div>						
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>1. ConfTest.py</h2>	
+									<div style="font-size:12px;">
+										The first thing to do to work with fixtures is to add a conftest.py file. When the pytest test is triggerred, firstly, methodin the conftest is executed if we mark if as autouse=True. 
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/autouse.png" alt="">
+							</div>						
+						</div>		
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>2. Test Body</h2>	
+									<div style="font-size:12px;">
+										When test class extends TestBase, Test Fixture in the baseClass is triggered since autorun is selected as true. In this way; before and after test methods are executed. One more thing is groups: pytest.mark. In this way you can run a specific group. (- m parameter) After registering marks on pytest.ini, you can select them in the execution:
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/markings.png" alt="">
+							</div>						
+						</div>	
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>3. Hooks in Conftest.py</h2>	
+									<div style="font-size:12px;">
+										Hooks are called after each stage in the test: before(setup), test, after(teardown). At this moment status of the test case can be parsed.
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/hooks.png" alt="">
+							</div>						
+						</div>	
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>4. Function Fixture</h2>	
+									<div style="font-size:12px;">
+										After test function execution finishes, fixtures, marked as function scopes are called. If the test is failed, we can capyure the screenshot over selenium driver and save the file with the name of the test case which called the fixture.
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/allureattach.png" alt="">
+							</div>						
+						</div>								
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>5. Allure Reporting and Decorators</h2>	
+									<div style="font-size:12px;">
+										Allure cmdline tool should be installed. (allure –version should work)<br>
+										Test steps are added in the code. For this, allure-pytest should be installed. (NOT pytest-allure-adaptor)
+
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/decorator.png" alt="">
+							</div>						
+						</div>
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>6. Adding screenshot to the Allure Report</h2>	
+									<div style="font-size:12px;">
+										Screenshots can be saved as a png file already, but if you want to see them directly on Allure report, they can be attached to the report itself.
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/alluress.png" alt="">
+							</div>						
+						</div>	
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>7. Starting allure server</h2>	
+									<div style="font-size:12px;">
+										<br>Execute pytest with --alluredir parameter: All files are collected under the directory that we showed.
+										<br>After that, server is started to show the graps:
+									</div>											
+								</div>
+							</div>
+					
+						</div>						
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/pytestallure.png" alt="">
+							</div>						
+						</div>
+						<div class="media">																					
+							<div class="media-body">
+								<div class="personal_text">	
+									<br><h2>8. A final tip</h2>	
+									<div style="font-size:12px;">
+										<br>Adding allure steps is possible before each method. If you want to add inside, add another method and call it.
+
+									</div>											
+								</div>
+							</div>
+					
+						</div>
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/allurelog.png" alt="">
+							</div>						
+						</div>
+						<div class="media">
+							<div class="media-body">
+								<br><div class="personal_text">
+									<a href="pipenv.html" class="btn-custom"> Dependency Management for Python <span class="ion-ios-arrow-forward"></span></a><br>												
+								</div>
+							</div>							
+						</div>						
+						
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+       
+       
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/popper.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/stellar.js"></script>
+        <script src="../vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="../vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="../js/jquery.ajaxchimp.min.js"></script>
+        <script src="../vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="../vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="../js/mail-script.js"></script>
+        <script src="../js/theme.js"></script>
+    </body>
+</html>

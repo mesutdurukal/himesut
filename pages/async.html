@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="../img/favicon.png" type="image/png">
+        <title>Mesut</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../vendors/linericon/style.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="../vendors/animate-css/animate.css">
+        <link rel="stylesheet" href="../vendors/popup/magnific-popup.css">
+        <link rel="stylesheet" href="../vendors/flaticon/flaticon.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+    <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158119194-2"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-158119194-2');</script></head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container box_1620">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="../index.html">Home</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../index.html#talks">Public Speaking</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../index.html#travel">Travel</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+           	<div class="container box_1620">
+           		<div class="banner_inner d-flex align-items-center">
+					<div class="banner_content">
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									When I first start using Cypress, I was frequently getting errors with "undefined" values after calling a function. The function was returning before the previous assignment was completed. Later, I realized it was due to asynchronous working way. It means, basically all the commands are queued and called sequentially. There is still no issues. However whenever we mix sync and async code, then we start to mix the execution order. In Playwright there is a trivial way to ensure the completion of a call with 'await' keyword. But in Cypess, it is a bit different. Let's see how it works.<br><br>
+									<h2>1. Sync and Async Code together</h2>	
+								</div>
+							</div>							
+						</div>	<br>								
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/mixedorder.png" alt="">
+							</div>						
+						</div><br>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		
+									In this simple code, what I want to see is:<br>1<br>2<br>wait 3 secs<br>3<br>4<br>test passes.<br><br>
+									But what I has is, I already get the 3 & 4 logs before waiting for 3 seconds. Which means <code>cy.wait(3000)</code> was not waited to be completed before moving to next call.
+								</div>
+							</div>							
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><br>
+									<h2>2. 'Then'</h2>	
+								</div>
+							</div>							
+						</div>	<br>								
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/then.png" alt="">
+							</div>						
+						</div><br>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		
+									This time what we do is, ensuring that wait is completed before moving to log3. What I see in the console is:
+									<br>1<br>2<br>4<br>wait 3 secs<br>3<br>test passes.<br><br>So, log3 is waiting for the previous call, but log4 is still running before them.
+									
+								</div>
+							</div>							
+						</div>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><br>
+									<h2>3. Promises</h2>	
+								</div>
+							</div>							
+						</div>	<br>								
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/promise.png" alt="">
+							</div>						
+						</div><br>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		
+									In Cypress, we can create 'Promises' which promise to return properly. When I execute the above code, what I see is: 
+									<br>1<br>2<br>4<br>test passes<br>wait 3 secs<br>3<br><br> Even the test finished before wait and log3. Seems like I could not wait for promise properly.
+									
+									
+									
+								</div>
+							</div>							
+						</div>	
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><br>
+									<h2>4. Tasks</h2>	
+								</div>
+							</div>							
+						</div>	<br>								
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/task.png" alt="">
+							</div>						
+						</div><br>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		
+									Instead of calling the promise function, we can just start it as a 'task'. For this purpose, we have to register this task name in the plugins file.
+									
+									
+									
+								</div>
+							</div>							
+						</div>	
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><br>
+									<h2>5. 'Wrap'</h2>	
+								</div>
+							</div>							
+						</div>	<br>								
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/wrap.png" alt="">
+							</div>						
+						</div><br>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		
+									If I wait for promise to be resolved, I see test passes after the promise: 
+									<br>1<br>2<br>4<br>wait 3 secs<br>3<br>test passes.<br><br> It is basically same with the second section: connecting log3 and wait with 'then'.
+									
+									
+									
+								</div>
+							</div>							
+						</div>	
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">									
+									<br><br>
+									<h2>6. 'Wrap' and 'Then'</h2>	
+								</div>
+							</div>							
+						</div>	<br>								
+						<div class="media">
+							<div class="d-flex">
+								<img src="../img/technical/wrapthen.png" alt="">
+							</div>						
+						</div><br>
+						<div class="media">							
+							<div class="media-body">
+								<div class="personal_text">		
+									If I continue to next calls after the promise is resolved, finally I get what I want: 
+									<br>1<br>2<br>wait 3 secs<br>3<br>4<br>test passes.<br><br>
+									
+									
+									
+								</div>
+							</div>							
+						</div>							
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+       
+       
+        
+        
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../js/jquery-3.3.1.min.js"></script>
+        <script src="../js/popper.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/stellar.js"></script>
+        <script src="../vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="../vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="../vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="../vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/popup/jquery.magnific-popup.min.js"></script>
+        <script src="../js/jquery.ajaxchimp.min.js"></script>
+        <script src="../vendors/counter-up/jquery.waypoints.min.js"></script>
+        <script src="../vendors/counter-up/jquery.counterup.min.js"></script>
+        <script src="../js/mail-script.js"></script>
+        <script src="../js/theme.js"></script>
+    </body>
+</html>
