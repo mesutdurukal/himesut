@@ -1,0 +1,92 @@
+/* Custom Styles for Mesut's Personal Website */
+
+/* Conference Logo Styles */
+.conference-logo {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 2px;
+    transition: transform 0.2s ease;
+}
+
+.conference-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Travel Icon Styles */
+.travel-icon {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 2px;
+    transition: transform 0.2s ease;
+}
+
+.travel-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Section Spacing */
+.section-spacing {
+    margin-bottom: 30px;
+}
+
+/* Year Divider */
+.year-divider {
+    margin: 20px 0;
+    display: block;
+}
+
+/* Category Label for Records Page */
+.category-label {
+    display: inline-block;
+    width: 400px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .conference-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .category-label {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* Social Links */
+.personal_social {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.personal_social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Improve link accessibility */
+a:focus {
+    outline: 2px solid #4285f4;
+    outline-offset: 2px;
+}
+
+/* Section Headers */
+.section-header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Conference Grid Layout */
+.conference-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 15px;
+}

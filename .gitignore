@@ -1,3 +1,8 @@
 .idea
 .idea/*
 .idea/workspace.xml
+xv
+*_refactored.html
+*.pyc
+__pycache__/
+verification-report.txt
