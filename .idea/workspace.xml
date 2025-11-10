@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df95b29f-f2f9-44d0-a815-7bdf8df1aaa7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/buildstuff.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/buildstuff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/devopspro.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/devopspro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/graphql.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/graphql.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/hustef.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/hustef.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/javascript.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/javascript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/publishpackage.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/publishpackage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/sqs.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/sqs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/tesena.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/tesena.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/typescript.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/typescript.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/ucaat.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ucaat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/valid_ml.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/valid_ml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/valid_smell.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/valid_smell.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/records.html" beforeDir="false" afterPath="$PROJECT_DIR$/records.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +93,8 @@
       <workItem from="1761633471613" duration="2380000" />
       <workItem from="1761637028782" duration="4233000" />
       <workItem from="1762229043194" duration="1649000" />
+      <workItem from="1762499382649" duration="589000" />
+      <workItem from="1762767774115" duration="149000" />
     </task>
     <servers />
   </component>
