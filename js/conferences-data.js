@@ -1,11 +1,15 @@
 // Conference Data Structure
 const conferencesData = {
-    upcoming: [
-        { img: "ttf.png", alt: "Test Talks Festival", url: null }
+    "upcoming": [
+        { img: "next.png", alt: "Next Talks", url: null }
+    ],
+    "2026": [
+        { img: "2026.png", alt: "2026 Conferences", url: null }
     ],
     
     "2025": [
         { img: "2025.png", alt: "2025 Conferences", url: null },
+        { img: "ttf.png", alt: "Tokyo Test Fest", url: null },
         { img: "kwsqa.png", alt: "KWSQA Conference", url: null },
         { img: "softcon.png", alt: "SoftCon", url: null },
         { img: "hustefLogo.png", alt: "Hustef Conference", url: null },
@@ -100,7 +104,102 @@ const conferencesData = {
         { img: "jsworld.png", alt: "JS World Conference", url: "pages/jsworld.html" }
     ],
     
-    // Add more years as needed...
+    "2022": [
+        { img: "2022.png", alt: "2022 Conferences", url: null },
+        { img: "pnsqc.jpg", alt: "PNSQC Conference", url: "pages/pnsqc.html" },
+        { img: "developerweekeurope.png", alt: "Developer Week Europe", url: null },
+        { img: "tsqa.jpg", alt: "TSQA Conference", url: "pages/tsqa.html" },
+        { img: "tokyo.png", alt: "Tokyo Conference", url: "pages/tokyo22.html" },
+        { img: "ankara22.jpg", alt: "Ankara Conference", url: "pages/ankara22.html" },
+        { img: "wearedevelopers.png", alt: "WeAreDevelopers", url: "pages/wearedevelopers.html" },
+        { img: "voxxedthes.jpg", alt: "Voxxed Thessaloniki", url: "pages/voxxedthes.html" },
+        { img: "agilille.png", alt: "Agile Lille", url: "pages/agilille.html" },
+        { img: "devweek21.jpg", alt: "Developer Week 2021", url: null },
+        { img: "devconf.png", alt: "DevConf", url: null },
+        { img: "palousa.png", alt: "Palousa", url: null },
+        { img: "qasummit.png", alt: "QA Summit", url: null },
+        { img: "handson.png", alt: "Hands-On Conference", url: "pages/handson.html" },
+        { img: "ucaatLogo.jpg", alt: "UCAAT Conference", url: "pages/ucaat22.html" },
+        { img: "agileindia.png", alt: "Agile India", url: "pages/agileindia.html" },
+        { img: "yava.png", alt: "YAVA Conference", url: "pages/yava22.html" },
+        { img: "qstagLogo.jpeg", alt: "Q-STAG Conference", url: null },
+        { img: "testflix.png", alt: "Testflix", url: "pages/testflix.html" },
+        { img: "stf.png", alt: "STF Conference", url: null },
+        { img: "pnsqc.jpg", alt: "PNSQC Conference", url: "pages/pnsqc22.html" },
+        { img: "festagiletr.png", alt: "Fest Agile TR", url: null },
+        { img: "testconeu.png", alt: "TestCon Europe", url: "pages/testcon22.html" },
+        { img: "heisenbug.jpg", alt: "Heisenbug Conference", url: null },
+        { img: "addo.png", alt: "ADDO Conference", url: "pages/addo.html" },
+        { img: "granite.png", alt: "Granite Conference", url: null },
+        { img: "codeweek.jpg", alt: "Code Week", url: "pages/codeweek.html" },
+        { img: "ittage2022.png", alt: "IT Tage 2022", url: "pages/ittage22.html" },
+        { img: "festive.png", alt: "Festive Tech Conference", url: "pages/festive.html" }
+    ],
+    
+    "2021": [
+        { img: "2021.png", alt: "2021 Conferences", url: null },
+        { img: "ittage365.png", alt: "IT Tage 365", url: "pages/ittage365.html" },
+        { img: "scottish.png", alt: "Scottish Summit", url: "pages/scottish.html" },
+        { img: "aginextlogo.png", alt: "AgiNext Conference", url: "pages/aginext.html" },
+        { img: "tokyo.png", alt: "Tokyo Conference", url: "pages/tokyo.html" },
+        { img: "developerweekeurope.png", alt: "Developer Week Europe", url: "pages/developerweekeurope.html" },
+        { img: "otc.png", alt: "OTC Conference", url: "pages/otc.html" },
+        { img: "techorama.png", alt: "Techorama", url: "pages/techorama.html" },
+        { img: "qaday.png", alt: "QA Day", url: "pages/qaday.html" },
+        { img: "yava.png", alt: "YAVA Conference", url: "pages/yava.html" },
+        { img: "devweek21.jpg", alt: "Developer Week 2021", url: null },
+        { img: "agile2021.png", alt: "Agile 2021", url: "pages/agile2021.html" },
+        { img: "tesinguy.png", alt: "Testing UY", url: "pages/testinguy.html" },
+        { img: "worldfestival.png", alt: "World Festival", url: null },
+        { img: "palousa.png", alt: "Palousa", url: null },
+        { img: "devconf.png", alt: "DevConf", url: "pages/devconf.html" },
+        { img: "spa.png", alt: "SPA Conference", url: null },
+        { img: "festagile.png", alt: "Fest Agile", url: null },
+        { img: "tesenalogo.png", alt: "Tesena Conference", url: null },
+        { img: "ucaatLogo.jpg", alt: "UCAAT Conference", url: "pages/ucaat2021.html" },
+        { img: "hustefLogo.png", alt: "Hustef Conference", url: "pages/hustef2021.html" },
+        { img: "agilearizona.png", alt: "Agile Arizona", url: "pages/agilearizona.html" },
+        { img: "build.png", alt: "Build Conference", url: null },
+        { img: "gtr.png", alt: "GTR Conference", url: "pages/gtr.html" }
+    ],
+    
+    "2020": [
+        { img: "2020.png", alt: "2020 Conferences", url: null },
+        { img: "tesenalogo.png", alt: "Tesena Conference", url: "pages/tesena.html" },
+        { img: "devopspro.png", alt: "DevOps Pro", url: "pages/devopspro.html" },
+        { img: "wfh.png", alt: "Work From Home", url: "pages/wfh.html" },
+        { img: "testingstagelogo.png", alt: "Testing Stage", url: "pages/testingstage.html" },
+        { img: "dataxdays.png", alt: "DataX Days", url: "pages/dataxdays.html" },
+        { img: "dw.jpg", alt: "Developer Week", url: "pages/dw.html" },
+        { img: "cloudouest.png", alt: "Cloud Ouest", url: "pages/cloudouest.html" },
+        { img: "devopsdaysist.png", alt: "DevOps Days Istanbul", url: "pages/devopsdaysist.html" },
+        { img: "rbi.jfif", alt: "RBI Conference", url: "pages/rbi.html" },
+        { img: "globalsummer.jfif", alt: "Global Summer", url: "pages/globalsummer.html" },
+        { img: "palousa.png", alt: "Palousa", url: "pages/palousa.html" },
+        { img: "globalai.png", alt: "Global AI", url: "pages/globalai.html" },
+        { img: "aadays.png", alt: "AA Days", url: "pages/aadays.html" },
+        { img: "devopscairo.jpg", alt: "DevOps Cairo", url: "pages/devopscairo.html" },
+        { img: "testcon.png", alt: "TestCon", url: "pages/testcon.html" },
+        { img: "testconeu.png", alt: "TestCon Europe", url: "pages/testconeu.html" },
+        { img: "qstagLogo.jpeg", alt: "Q-STAG Conference", url: "pages/qstag.html" },
+        { img: "ndc.png", alt: "NDC Sydney", url: "pages/ndcsydney.html" },
+        { img: "aidev.png", alt: "AI Dev", url: "pages/aidev.html" },
+        { img: "hustef2020Logo.png", alt: "Hustef 2020", url: "pages/hustef2020.html" },
+        { img: "devweekEnt.png", alt: "Developer Week Enterprise", url: "pages/devweekEnt.html" },
+        { img: "atd.png", alt: "ATD Conference", url: "pages/atd.html" },
+        { img: "buildstuff.png", alt: "Build Stuff", url: "pages/buildstuff.html" },
+        { img: "paristest.png", alt: "Paris Test", url: "pages/paristest.html" },
+        { img: "tesenalogo.png", alt: "Tesena Online", url: "pages/tesenaonline.html" },
+        { img: "ittage.png", alt: "IT Tage", url: "pages/ittage.html" }
+    ],
+    
+    "2019": [
+        { img: "2019.png", alt: "2019 Conferences", url: null },
+        { img: "ucaatLogo.jpg", alt: "UCAAT Conference", url: "pages/ucaat.html" },
+        { img: "qstagLogo.jpeg", alt: "SQS Conference", url: "pages/sqs.html" },
+        { img: "hustefLogo.png", alt: "Hustef Conference", url: "pages/hustef.html" },
+        { img: "iariaLogo.png", alt: "IARIA Conference", url: "pages/valid.html" }
+    ]
 };
 
 // Podcasts & Tech Talks Data
@@ -110,9 +209,7 @@ const podcastsData = [
     { img: "testeryou.png", alt: "Tester You Podcast", url: "https://youtu.be/uOY4ltHaCns" },
     { img: "ejable.jpg", alt: "Ejable Podcast", url: "https://youtu.be/DQMYLENe9gI" },
     { img: "creativeTech.png", alt: "Creative Tech Podcast", url: "https://youtu.be/b1JyNRocZGs" },
-    { img: "creativeTech.png", alt: "Creative Tech Podcast on Spotify", url: "https://open.spotify.com/episode/6IeoSfz68L9V9aK8m5IzNA" },
     { img: "richie.png", alt: "Richie's Podcast", url: "https://youtu.be/a_-1JILpLRI" },
-    { img: "richie.png", alt: "Richie's Podcast on Spotify", url: "https://open.spotify.com/show/1Jo5HkUXGGEJOlfJW88w9W" },
     { img: "vitaly.jpg", alt: "Vitaly's Tech Talk", url: "https://youtu.be/5yd3IUJcgTk" },
     { img: "senor.jpg", alt: "Senor Testing", url: "https://www.youtube.com/live/qfv3tXgTcsM" }
 ];
@@ -171,5 +268,8 @@ const travelData = [
     { img: "icon_taiwan.png", alt: "Taiwan", url: "pages/taiwan.html" },
     { img: "icon_thai.png", alt: "Thailand", url: "pages/thailand.html" },
     { img: "icon_phi.png", alt: "Philippines", url: "pages/philiphines.html" },
-    { img: "icon_vietnam.png", alt: "Vietnam", url: "pages/vietnam.html" }
+    { img: "icon_vietnam.png", alt: "Vietnam", url: "pages/vietnam.html" },
+    { img: "icon_denmark.png", alt: "Denmark", url: "pages/denmark.html" },
+    { img: "icon_norway.png", alt: "Norway", url: "pages/norway.html" },
+    { img: "icon_malaysia.png", alt: "Malaysia", url: "pages/malaysia.html" }
 ];

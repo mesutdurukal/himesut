@@ -87,6 +87,6 @@ a:focus {
 .conference-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 2px;
     margin-bottom: 15px;
 }
