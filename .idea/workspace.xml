@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df95b29f-f2f9-44d0-a815-7bdf8df1aaa7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/conferences-data.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/conferences-data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mesutdurukal.com.certificate.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros-6.config" beforeDir="false" />
-    </list>
+    <list default="true" id="df95b29f-f2f9-44d0-a815-7bdf8df1aaa7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +93,7 @@
       <workItem from="1762499382649" duration="589000" />
       <workItem from="1762767774115" duration="2324000" />
       <workItem from="1762865918520" duration="943000" />
-      <workItem from="1763255391294" duration="15929000" />
+      <workItem from="1763255391294" duration="19645000" />
     </task>
     <servers />
   </component>
