@@ -1,7 +1,9 @@
 // Conference Data Structure
 const conferencesData = {
     "upcoming": [
-        { img: "next.png", alt: "Next Talks", url: null }
+        { img: "next.png", alt: "Next Talks", url: null },
+        { img: "a4q.png", alt: "Testing Summit", url: null },
+        { img: "ucaatLogo.jpg", alt: "UCAAT ", url: null }
     ],
     "2026": [
         { img: "2026.png", alt: "2026 Conferences", url: null }
