@@ -1,5 +1,10 @@
 /* Custom Styles for Mesut's Personal Website */
 
+/* Navigation Menu Font Size */
+.header_area .navbar .nav .nav-item .nav-link {
+    font-size: 16px;
+}
+
 /* Conference Logo Styles */
 .conference-logo {
     width: 50px;

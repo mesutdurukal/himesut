@@ -34,6 +34,9 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/speaking.css">
+        <!-- Leaflet CSS for interactive map -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=UA-158119194-2"></script><script>  window.dataLayer = window.dataLayer || [];  function gtag(){dataLayer.push(arguments);}  gtag('js', new Date());  gtag('config', 'UA-158119194-2');</script>
     </head>
     
@@ -94,19 +97,53 @@
         <div class="container box_1620">
             <div class="banner_content">				
                 <h1>Public Speaking</h1>
-                    <div class="conference-grid" id="upcoming-conferences"></div>
-                    <div class="conference-grid" id="conferences-2025"></div>
-                    <div class="conference-grid" id="conferences-2024"></div>
-                    <div class="conference-grid" id="conferences-2023"></div>
-                    <div class="conference-grid" id="conferences-2022"></div>
-                    <div class="conference-grid" id="conferences-2021"></div>
-                    <div class="conference-grid" id="conferences-2020"></div>
-                    <div class="conference-grid" id="conferences-2019"></div>
-                <br>
-                <h1>Podcasts & Tech Talks</h1><div class="conference-grid" id="podcasts"></div>
-                <h1>Interviews</h1><div class="conference-grid" id="interviews"></div>
-                <h1>Books & Contributions</h1><div class="conference-grid" id="books"></div>
-                <h1>Articles</h1><div class="conference-grid" id="articles"></div>
+
+                <!-- Stats Bar -->
+                <div class="stats-bar" id="statsBar">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalTalks">0</div>
+                        <div class="stat-label">Total Talks</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalConferences">0</div>
+                        <div class="stat-label">Conferences</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalCountries">0</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalRecordings">0</div>
+                        <div class="stat-label">Recordings</div>
+                    </div>
+                </div>
+
+                <!-- Search -->
+                <input type="text" class="search-box" id="searchBox" placeholder="Search talks by title, conference, or topic...">
+
+                <!-- View Toggle -->
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="chronological">Chronological</button>
+                    <button class="view-btn" data-view="conference">By Conference</button>
+                    <button class="view-btn" data-view="location">By Location</button>
+                    <button class="view-btn" data-view="topic">By Topic</button>
+                    <button class="view-btn" data-view="year">By Year</button>
+                </div>
+
+                <!-- Filter Section -->
+                <div class="filter-section">
+                    <div class="filter-group">
+                        <span class="filter-label">Filter by Year:</span>
+                        <div class="filter-chips" id="yearFilters"></div>
+                    </div>
+                    <div class="filter-group">
+                        <span class="filter-label">Filter by Topic:</span>
+                        <div class="filter-chips" id="topicFilters"></div>
+                    </div>
+                </div>
+
+                <!-- Talks Container -->
+                <div class="talks-container" id="talksContainer"></div>
             </div>
         </div>
     </section>
@@ -125,11 +162,7 @@
                      </div>
                  </div>							
 
-                 <div class="media">
-                     <div class="d-flex">
-                         <img src="img/travel/travel_map.png" alt="Travel Map" style="max-width: 70%; height: auto;">
-                     </div>
-                 </div>
+                 <div id="travelMap" style="width: 100%; height: 500px; border-radius: 8px; margin-top: 20px;"></div>
              </div>
          </div>
      </div>
@@ -155,6 +188,11 @@
     <script src="js/mail-script.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/conferences-data.js"></script>
+    <script src="js/talks-data.js"></script>
+    <script src="js/speaking.js"></script>
     <script src="js/render-helpers.js"></script>
+    <!-- Leaflet JS for interactive map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/travel-map.js"></script>
     </body>
 </html>
