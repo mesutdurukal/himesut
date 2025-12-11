@@ -6,3 +6,4 @@ xv
 *.pyc
 __pycache__/
 verification-report.txt
+.idea/

@@ -20,7 +20,7 @@ function showNotFoundError(pageId) {
                     <p style="margin: 20px 0;">The page "${pageId}" is currently being updated.</p>
                     <p style="color: #666;">Redirecting you to the home page...</p>
                     <div style="margin-top: 30px;">
-                        <a href="../index.html" class="btn btn-primary" style="padding: 10px 30px; background: #0066cc; color: white; text-decoration: none; border-radius: 4px;">Go to Home Now</a>
+                        <a href="index.html" class="btn btn-primary" style="padding: 10px 30px; background: #0066cc; color: white; text-decoration: none; border-radius: 4px;">Go to Home Now</a>
                     </div>
                 </div>
             </div>
@@ -28,7 +28,7 @@ function showNotFoundError(pageId) {
     
     // Auto-redirect after 3 seconds
     setTimeout(() => {
-        window.location.href = '../index.html';
+        window.location.href = 'index.html';
     }, 3000);
 }
 
@@ -67,7 +67,7 @@ function renderGallery(data) {
             html += `
                 <div class="${img.size}">
                     <a href="${img.link}" class="img-gal">
-                        <div class="single-gallery-image" style="background: url(../img/${img.src});"></div>
+                        <div class="single-gallery-image" style="background: url(img/${img.src});"></div>
                     </a>
                     ${img.caption}
                 </div>`;
@@ -76,8 +76,8 @@ function renderGallery(data) {
             const imgPath = img.src.includes('/') ? img.src : `travel/${img.src}`;
             html += `
                 <div class="${img.size}">
-                    <a href="../img/${imgPath}" class="img-gal">
-                        <div class="single-gallery-image" style="background: url(../img/${imgPath});"></div>
+                    <a href="img/${imgPath}" class="img-gal">
+                        <div class="single-gallery-image" style="background: url(img/${imgPath});"></div>
                     </a>
                     ${img.caption}
                 </div>`;
@@ -108,7 +108,7 @@ function renderArticle(data) {
             html += `
             <div class="media">
                 <div class="d-flex">
-                    <img src="../img/technical/${section.image}" alt="">
+                    <img src="img/technical/${section.image}" alt="">
                 </div>
             </div><br>`;
         }
@@ -252,7 +252,7 @@ function loadContent() {
             content = `
                 <div class="media">
                     <div class="d-flex">
-                        <img src="../img/${data.image}" alt="${data.title}">
+                        <img src="img/${data.image}" alt="${data.title}">
                     </div>
                 </div>`;
             break;
