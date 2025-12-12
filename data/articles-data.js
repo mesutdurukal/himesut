@@ -1,8 +1,7 @@
 // Auto-generated pages data
 // Generated on: 2025-11-16T06:18:47.910Z
 
-
-const pagesData = {
+const articlesData = {
     "technical": {
         "allure": {
             "type": "article",
@@ -1357,10 +1356,10 @@ const pagesData = {
 };
 
 
-// Helper function to get page data
-function getPageData(category, pageId) {
-    if (pagesData[category] && pagesData[category][pageId]) {
-        return pagesData[category][pageId];
+// Helper function to get article data
+function getArticleData(category, pageId) {
+    if (articlesData[category] && articlesData[category][pageId]) {
+        return articlesData[category][pageId];
     }
     return null;
 }

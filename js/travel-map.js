@@ -1,6 +1,12 @@
 // Interactive Travel Map using Leaflet
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Render travel flags
+    const iconsContainer = document.getElementById('travel-icons');
+    if (iconsContainer && typeof travelData !== 'undefined' && typeof renderTravelIcon === 'function') {
+        iconsContainer.innerHTML = travelData.map(t => renderTravelIcon(t)).join('');
+    }
+
     const mapElement = document.getElementById('travelMap');
     if (!mapElement) return;
 

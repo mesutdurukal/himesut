@@ -149,7 +149,7 @@ function showDirectory() {
     
     Object.keys(categories).forEach(categoryName => {
         const categoryKey = categories[categoryName];
-        const pages = pagesData[categoryKey];
+        const pages = articlesData[categoryKey];
         
         if (pages) {
             const pageIds = Object.keys(pages).sort();
@@ -197,7 +197,11 @@ function loadContent() {
         return;
     }
     
-    const data = getPageData(category, id);
+    // Check articles data first, then travel data
+    let data = getArticleData(category, id);
+    if (!data && category === 'travel' && typeof getTravelPageData === 'function') {
+        data = getTravelPageData(id);
+    }
     
     if (!data) {
         // Try to redirect to old HTML file as fallback
