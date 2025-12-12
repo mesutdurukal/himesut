@@ -27,9 +27,13 @@ function updateStats() {
     document.getElementById('totalRecordings').textContent = recordings;
 }
 
+function getYear(talk) {
+    return talk.date ? new Date(talk.date).getFullYear() : null;
+}
+
 function generateFilters() {
     // Year filters
-    const years = [...new Set(talksData.map(t => t.year))].sort((a, b) => b - a);
+    const years = [...new Set(talksData.map(t => getYear(t)))].filter(y => y).sort((a, b) => b - a);
     const yearContainer = document.getElementById('yearFilters');
     if (yearContainer) {
         yearContainer.innerHTML = '<button class="chip active" data-year="all">All Years</button>';
@@ -98,7 +102,8 @@ function setupEventListeners() {
 
 function filterTalks() {
     return talksData.filter(talk => {
-        const matchesYear = selectedYear === 'all' || talk.year == selectedYear;
+        const talkYear = getYear(talk);
+        const matchesYear = selectedYear === 'all' || talkYear == selectedYear;
         const matchesTopic = selectedTopic === 'all' || talk.topics.includes(selectedTopic);
         const matchesSearch = searchQuery === '' ||
             talk.title.toLowerCase().includes(searchQuery) ||
@@ -144,14 +149,14 @@ function renderTalks() {
 }
 
 function renderChronological(talks) {
-    const sorted = [...talks].sort((a, b) => b.year - a.year);
+    const sorted = [...talks].sort((a, b) => new Date(b.date) - new Date(a.date));
     return sorted.map(talk => renderTalkCard(talk)).join('');
 }
 
 function renderGrouped(talks, groupBy) {
     const groups = {};
     talks.forEach(talk => {
-        const key = talk[groupBy];
+        const key = groupBy === 'year' ? getYear(talk) : talk[groupBy];
         if (!groups[key]) groups[key] = [];
         groups[key].push(talk);
     });
@@ -171,7 +176,7 @@ function renderGrouped(talks, groupBy) {
     }
 
     return sortedKeys.map(key => {
-        const groupTalks = groups[key].sort((a, b) => b.year - a.year);
+        const groupTalks = groups[key].sort((a, b) => new Date(b.date) - new Date(a.date));
         return `
             <div class="group-header">${key} (${groupTalks.length})</div>
             ${groupTalks.map(talk => renderTalkCard(talk)).join('')}
@@ -193,7 +198,7 @@ function renderByTopic(talks) {
     const sortedKeys = Object.keys(groups).sort();
 
     return sortedKeys.map(key => {
-        const groupTalks = groups[key].sort((a, b) => b.year - a.year);
+        const groupTalks = groups[key].sort((a, b) => new Date(b.date) - new Date(a.date));
         return `
             <div class="group-header">${key} (${groupTalks.length})</div>
             ${groupTalks.map(talk => renderTalkCard(talk)).join('')}
@@ -203,8 +208,9 @@ function renderByTopic(talks) {
 
 function renderTalkCard(talk) {
     const logoHtml = talk.logo ? `<img src="img/conferences/${talk.logo}" alt="${talk.conference}" class="talk-logo">` : '';
+    const upcomingBadge = talk.upcoming ? '<span class="upcoming-badge">Upcoming</span>' : '';
     
-    let dateDisplay = talk.year;
+    let dateDisplay = '';
     if (talk.date) {
         dateDisplay = new Date(talk.date).toLocaleDateString('en-US', {
             year: 'numeric',
@@ -214,7 +220,8 @@ function renderTalkCard(talk) {
     }
 
     return `
-        <div class="talk-card">
+        <div class="talk-card${talk.upcoming ? ' upcoming' : ''}">
+            ${upcomingBadge}
             <div class="talk-card-content">
                 <div class="talk-title">${talk.title}</div>
                 <div class="talk-meta">

@@ -136,6 +136,25 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+.talk-card.upcoming {
+    border-color: #4caf50;
+    border-width: 2px;
+}
+
+.upcoming-badge {
+    position: absolute;
+    top: -10px;
+    left: 16px;
+    background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .talk-card-content {
     flex: 1;
     padding-right: 60px;
