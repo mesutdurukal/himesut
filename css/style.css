@@ -1723,6 +1723,8 @@ h6 {
   background-position: center center !important;
   background-size: cover !important;
   height: 200px;
+  width: 100%;
+  min-width: 200px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

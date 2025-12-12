@@ -18,19 +18,33 @@ function renderConferenceLogo(conference, basePath = 'img/conferences/') {
     return imgTag;
 }
 
+// Country name to ISO code mapping for flag-icon CSS
+const countryToCode = {
+    'Turkey': 'tr', 'Germany': 'de', 'Bosnia': 'ba', 'Croatia': 'hr',
+    'France': 'fr', 'Italy': 'it', 'Netherlands': 'nl', 'Montenegro': 'me',
+    'Spain': 'es', 'Czech Republic': 'cz', 'Hungary': 'hu', 'Austria': 'at',
+    'Belgium': 'be', 'Portugal': 'pt', 'Japan': 'jp', 'Greece': 'gr',
+    'United States': 'us', 'Canada': 'ca', 'England': 'gb', 'Singapore': 'sg',
+    'Taiwan': 'tw', 'Thailand': 'th', 'Philippines': 'ph', 'Vietnam': 'vn',
+    'Denmark': 'dk', 'Norway': 'no', 'Malaysia': 'my'
+};
+
 /**
- * Renders a travel icon with proper accessibility
- * @param {Object} travel - Travel object with img, alt, and url properties
+ * Renders a travel icon using flag-icon CSS
+ * @param {Object} travel - Travel object with name and url properties
  * @returns {string} HTML string for the travel icon
  */
 function renderTravelIcon(travel) {
-    const imgTag = `<img src="img/travel/${travel.img}" alt="${travel.alt}" class="travel-icon">`;
+    const code = countryToCode[travel.name];
+    if (!code) return '';
+    
+    const flagDiv = `<div class="flag-icon flag-icon-${code}" title="${travel.name}" style="width: 40px; height: 30px; display: inline-block; margin: 5px;"></div>`;
     
     if (travel.url) {
-        return `<a href="${travel.url}">${imgTag}</a>`;
+        return `<a href="${travel.url}">${flagDiv}</a>`;
     }
     
-    return imgTag;
+    return flagDiv;
 }
 
 /**

@@ -1,8 +1,12 @@
 // Talks Data - Add your talks here
 // logo field should match the image filename in img/conferences/
 const talksData = [
+    // Upcoming (set upcoming: true for conferences not yet confirmed with details)
+    { title: "TBD", conference: "Testing Summit", country: "Online", date: "2026-03-01", year: 2026, topics: ["Testing"], recording: null, logo: "a4q.png", upcoming: true },
+    { title: "TBD", conference: "UCAAT", country: "TBD", date: "2026-01-01", year: 2026, topics: ["Testing"], recording: null, logo: "ucaatLogo.jpg", upcoming: true },
+
     // 2025
-    { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", year: 2025, topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
+    { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", year: 2025, topics: ["Testing Philosophy"], recording: "https://youtu.be/vKpVlrWufug", logo: "ttf.png" },
     { title: "UserFriendly Automation Framework", conference: "KWSQA", country: "Online", date: "2025-10-29", year: 2025, topics: ["Test Automation"], recording: null, logo: "kwsqa.png" },
     { title: "Building a Reliable Deployment Pipeline", conference: "SoftCon", country: "Online", date: "2025-10-28", year: 2025, topics: ["DevOps"], recording: null, logo: "softcon.png" },
     { title: "Zen of Testing", conference: "Hustef", country: "Hungary", date: "2025-10-14", year: 2025, topics: ["Testing Philosophy"], recording: null, logo: "hustefLogo.png" },

@@ -4,6 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const mapElement = document.getElementById('travelMap');
     if (!mapElement) return;
 
+    // Capital city coordinates lookup
+    const capitalCoords = {
+        'Turkey': [39.93, 32.86], 'Germany': [52.52, 13.40], 'Bosnia': [43.86, 18.41],
+        'Croatia': [45.81, 15.98], 'France': [48.86, 2.35], 'Italy': [41.90, 12.50],
+        'Netherlands': [52.37, 4.90], 'Montenegro': [42.44, 19.26], 'Spain': [40.42, -3.70],
+        'Czech Republic': [50.08, 14.44], 'Hungary': [47.50, 19.04], 'Austria': [48.21, 16.37],
+        'Belgium': [50.85, 4.35], 'Portugal': [38.72, -9.14], 'Japan': [35.68, 139.69],
+        'Greece': [37.98, 23.73], 'United States': [38.91, -77.04], 'Canada': [45.42, -75.70],
+        'England': [51.51, -0.13], 'Singapore': [1.35, 103.82], 'Taiwan': [25.03, 121.57],
+        'Thailand': [13.76, 100.50], 'Philippines': [14.60, 120.98], 'Vietnam': [21.03, 105.85],
+        'Denmark': [55.68, 12.57], 'Norway': [59.91, 10.75], 'Malaysia': [3.14, 101.69]
+    };
+
     // Initialize map centered on a world view
     const map = L.map('travelMap').setView([30, 20], 2);
 
@@ -13,36 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         maxZoom: 18
     }).addTo(map);
 
-    // Visited countries with coordinates and links
-    const visitedPlaces = [
-        { name: "Turkey", lat: 39.0, lng: 35.0, url: "content.html?category=travel&id=turkey" },
-        { name: "Germany", lat: 51.1657, lng: 10.4515, url: "content.html?category=travel&id=germany" },
-        { name: "Bosnia", lat: 43.9159, lng: 17.6791, url: "content.html?category=travel&id=bosnia" },
-        { name: "Croatia", lat: 45.1, lng: 15.2, url: "content.html?category=travel&id=croatia" },
-        { name: "France", lat: 46.2276, lng: 2.2137, url: "content.html?category=travel&id=france" },
-        { name: "Italy", lat: 41.8719, lng: 12.5674, url: "content.html?category=travel&id=italy" },
-        { name: "Netherlands", lat: 52.1326, lng: 5.2913, url: "content.html?category=travel&id=holland" },
-        { name: "Montenegro", lat: 42.7087, lng: 19.3744, url: "content.html?category=travel&id=montenegro" },
-        { name: "Spain", lat: 40.4637, lng: -3.7492, url: "content.html?category=travel&id=spain" },
-        { name: "Czech Republic", lat: 49.8175, lng: 15.473, url: "content.html?category=travel&id=czech" },
-        { name: "Hungary", lat: 47.1625, lng: 19.5033, url: "content.html?category=travel&id=hungary" },
-        { name: "Austria", lat: 47.5162, lng: 14.5501, url: "content.html?category=travel&id=austria" },
-        { name: "Belgium", lat: 50.5039, lng: 4.4699, url: "content.html?category=travel&id=belgium" },
-        { name: "Portugal", lat: 39.3999, lng: -8.2245, url: "content.html?category=travel&id=portugal" },
-        { name: "Japan", lat: 36.2048, lng: 138.2529, url: "content.html?category=travel&id=japan" },
-        { name: "Greece", lat: 39.0742, lng: 21.8243, url: "content.html?category=travel&id=greece" },
-        { name: "United States", lat: 37.0902, lng: -95.7129, url: "content.html?category=travel&id=usa" },
-        { name: "Canada", lat: 56.1304, lng: -106.3468, url: "content.html?category=travel&id=canada" },
-        { name: "England", lat: 52.3555, lng: -1.1743, url: "content.html?category=travel&id=england" },
-        { name: "Singapore", lat: 1.3521, lng: 103.8198, url: "content.html?category=travel&id=singapore" },
-        { name: "Taiwan", lat: 23.6978, lng: 120.9605, url: "content.html?category=travel&id=taiwan" },
-        { name: "Thailand", lat: 15.870, lng: 100.9925, url: "content.html?category=travel&id=thailand" },
-        { name: "Philippines", lat: 12.8797, lng: 121.774, url: "content.html?category=travel&id=philiphines" },
-        { name: "Vietnam", lat: 14.0583, lng: 108.2772, url: "content.html?category=travel&id=vietnam" },
-        { name: "Denmark", lat: 56.2639, lng: 9.5018, url: "content.html?category=travel&id=denmark" },
-        { name: "Norway", lat: 60.472, lng: 8.4689, url: "content.html?category=travel&id=norway" },
-        { name: "Malaysia", lat: 4.2105, lng: 101.9758, url: "content.html?category=travel&id=malaysia" }
-    ];
+    // travelData is loaded from data/travel-data.js
 
     // Custom marker icon
     const visitedIcon = L.divIcon({
@@ -53,8 +37,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Add markers for each visited place
-    visitedPlaces.forEach(place => {
-        const marker = L.marker([place.lat, place.lng], { icon: visitedIcon }).addTo(map);
+    travelData.forEach(place => {
+        const coords = capitalCoords[place.name];
+        if (!coords) return;
+        const marker = L.marker(coords, { icon: visitedIcon }).addTo(map);
         
         // Create popup content
         let popupContent = `<strong>${place.name}</strong>`;
@@ -71,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const div = L.DomUtil.create('div', 'map-legend');
         div.innerHTML = `
             <div style="background: white; padding: 10px 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
-                <strong>${visitedPlaces.length} Countries Visited</strong>
+                <strong>${travelData.length} Countries Visited</strong>
             </div>
         `;
         return div;
