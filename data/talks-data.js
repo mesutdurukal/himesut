@@ -6,10 +6,10 @@ const talksData = [
     { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png", upcoming: true },
 
     // 2025
-    { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: "https://youtu.be/vKpVlrWufug", logo: "ttf.png" },
+    { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
     { title: "UserFriendly Automation Framework", conference: "KWSQA", country: "Online", date: "2025-10-29", topics: ["Test Automation"], recording: null, logo: "kwsqa.png" },
     { title: "Building a Reliable Deployment Pipeline", conference: "SoftCon", country: "Online", date: "2025-10-28", topics: ["DevOps"], recording: null, logo: "softcon.png" },
-    { title: "Zen of Testing", conference: "Hustef", country: "Hungary", date: "2025-10-14", topics: ["Testing Philosophy"], recording: null, logo: "hustefLogo.png" },
+    { title: "Zen of Testing", conference: "Hustef", country: "Hungary", date: "2025-10-14", topics: ["Testing Philosophy"], recording: "https://youtu.be/vKpVlrWufug", logo: "hustefLogo.png" },
     { title: "History of Quality Assurance", conference: "PNSQC", country: "Online", date: "2025-10-13", topics: ["Quality"], recording: null, logo: "pnsqc.jpg" },
     { title: "Theseus", conference: "Hands On", country: "Online", date: "2025-09-19", topics: ["Testing"], recording: "https://www.youtube.com/live/XaFqLMkMHpM", logo: "handson.png" },
     { title: "Zen of Testing", conference: "Kansas City Developer Conference", country: "USA", date: "2025-08-15", topics: ["Testing Philosophy"], recording: null, logo: "kcdc.png" },
