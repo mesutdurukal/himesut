@@ -163,5 +163,15 @@ const DATA = {
             year: 2025,
             url: "https://youtu.be/BSPIsWbqWqU"
         }
+    ],
+    "Robots / Warehouse Automation": [
+        {
+            title: "How to train your robot?",
+            speakers: ["Irja Straus"],
+            event: "Hustef",
+            city: "Budapest, Hungary",
+            year: 2025,
+            url: "https://youtu.be/TxTqsuL4HcE"
+        }
     ]
 };
