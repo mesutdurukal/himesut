@@ -144,6 +144,16 @@ const DATA = {
             url: "https://youtu.be/Q9XgVT8m2hc"
         }
     ],
+    "Monitoring / Metrics": [
+        {
+            title: "Putting the Q in DevEx",
+            speakers: ["Martijn Goossens"],
+            event: "Hustef",
+            city: "Budapest, Hungary",
+            year: 2025,
+            url: "https://youtu.be/pP4BdmQsFbs"
+        }
+    ],
     "Tester Relations / Communication": [
         {
             title: "Be a Better Test Friend to Your Team",
