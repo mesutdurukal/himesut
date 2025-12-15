@@ -134,6 +134,16 @@ const DATA = {
             url: "https://youtu.be/OOmsCltczCA"
         }
     ],
+    "API Testing": [
+        {
+            title: "API testing journey through web protocols",
+            speakers: ["Dawid Pacia"],
+            event: "Hustef",
+            city: "Budapest, Hungary",
+            year: 2025,
+            url: "https://youtu.be/Q9XgVT8m2hc"
+        }
+    ],
     "Tester Relations / Communication": [
         {
             title: "Be a Better Test Friend to Your Team",
