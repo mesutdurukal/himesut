@@ -144,6 +144,16 @@ const DATA = {
             url: "https://youtu.be/Q9XgVT8m2hc"
         }
     ],
+    "Contract Testing": [
+        {
+            title: "Contracts for Hire",
+            speakers: ["Craig Risi"],
+            event: "Hustef",
+            city: "Budapest, Hungary",
+            year: 2025,
+            url: "https://youtu.be/mIL46wIrq6w"
+        }
+    ],
     "Monitoring / Metrics": [
         {
             title: "Putting the Q in DevEx",
