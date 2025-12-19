@@ -9,6 +9,14 @@ const DATA = {
             url: "https://www.youtube.com/watch?v=Q1T5J0KXUwY"
         },
         {
+            title: "Data-Driven Product Design",
+            speakers: ["J Christopher Garcia", "Chris Hyams"],
+            event: "@IndeedEng Talks",
+            city: "Austin",
+            year: 2013,
+            url: "https://www.youtube.com/watch?v=Y6NI8y21xhg"
+        },
+        {
             title: "Beyond A/B: Test automation approaches for web variants from A to Z",
             speakers: ["Giuseppe Donati"],
             event: "Hustef",
