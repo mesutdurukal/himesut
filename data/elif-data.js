@@ -57,5 +57,6 @@ const locations = [
     { coords: [35.55186253471919, 139.57892796082578], image: 'birthday.jpg', title: 'Birthday, Japan - 11.11.2025' },
     { coords: [35.6224544294444, 139.73117796481552], image: 'ttf.jpg', title: 'Tokyo Test Fest, Japan - 14.11.2025' },
     { coords: [35.64504407805798, 139.74906132553446], image: 'indeed.jpg', title: 'Indeed Family Day, Japan - 21.11.2025' },
-    { coords: [34.929749973410075, 139.10585242904713], image: 'izu.jpg', title: 'Ippeki Lake, Japan - 30.11.2025' }
+    { coords: [34.929749973410075, 139.10585242904713], image: 'izu.jpg', title: 'Ippeki Lake, Japan - 30.11.2025' },
+    { coords: [36.99369298591082, 140.81567452568225], image: 'hawaiian.jpg', title: 'Spa Resort Hawaiians, Japan - 24.12.2025' }
 ];

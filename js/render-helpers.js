@@ -66,16 +66,18 @@ function renderConferenceSection(conferences, containerId, basePath = 'img/confe
  */
 function renderAllConferences() {
     // Render upcoming
-    if (conferencesData.upcoming) {
+    if (typeof conferencesData !== 'undefined' && conferencesData.upcoming) {
         renderConferenceSection(conferencesData.upcoming, 'upcoming-conferences');
     }
     
     // Render by year
-    Object.keys(conferencesData).forEach(year => {
-        if (year !== 'upcoming') {
-            renderConferenceSection(conferencesData[year], `conferences-${year}`);
-        }
-    });
+    if (typeof conferencesData !== 'undefined') {
+        Object.keys(conferencesData).forEach(year => {
+            if (year !== 'upcoming') {
+                renderConferenceSection(conferencesData[year], `conferences-${year}`);
+            }
+        });
+    }
     
     // Render podcasts
     if (typeof podcastsData !== 'undefined') {
