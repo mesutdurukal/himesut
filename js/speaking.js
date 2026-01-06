@@ -149,8 +149,15 @@ function renderTalks() {
 }
 
 function renderChronological(talks) {
-    const sorted = [...talks].sort((a, b) => new Date(b.date) - new Date(a.date));
-    return sorted.map(talk => renderTalkCard(talk)).join('');
+    const upcoming = talks.filter(t => t.upcoming);
+    const past = talks.filter(t => !t.upcoming);
+    
+    // Upcoming: closest first (ascending by date)
+    const sortedUpcoming = [...upcoming].sort((a, b) => new Date(a.date) - new Date(b.date));
+    // Past: latest first (descending by date)
+    const sortedPast = [...past].sort((a, b) => new Date(b.date) - new Date(a.date));
+    
+    return [...sortedUpcoming, ...sortedPast].map(talk => renderTalkCard(talk)).join('');
 }
 
 function renderGrouped(talks, groupBy) {
