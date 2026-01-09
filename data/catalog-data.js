@@ -25,6 +25,48 @@ const DATA = {
             url: "https://www.youtube.com/watch?v=M2AX7NvdDKc"
         }
     ],
+    "i18n": [
+        {
+            title: "Eita! Why Internationalization and Localization matter",
+            speakers: ["Nicolle Cysneiros"],
+            event: "DjangoCon 2019",
+            city: "San Diego",
+            year: 2019,
+            url: "https://www.youtube.com/watch?v=ByqODbNBE4M"
+        },
+        {
+            title: "End-to-End i18n",
+            speakers: ["Luke Ehresman"],
+            event: "React Conference",
+            city: "Gazelle USA",
+            year: 2021,
+            url: "https://www.youtube.com/watch?v=hpUWx6F5QOM"
+        },
+        {
+            title: "Building Angular apps with internationalization (i18n) in mind",
+            speakers: ["Naomi Meyer"],
+            event: "Angular Connect",
+            city: "London",
+            year: 2019,
+            url: "https://www.youtube.com/watch?v=cUDUqqOtBvM"
+        },
+        {
+            title: "Internationalization is a Piece of Cake",
+            speakers: ["Eli Schutze Ramirez"],
+            event: "GOTO 2019",
+            city: "Copenhagen",
+            year: 2019,
+            url: "https://www.youtube.com/watch?v=nsGmQ0v36bo"
+        },
+        {
+            title: "Pardon my French or The technical aspects of i18n and l10n",
+            speakers: ["Andreas Heigl"],
+            event: "Fwdays PHP",
+            city: "Online",
+            year: 2024,
+            url: "https://www.youtube.com/watch?v=2G4PKa6eFX8"
+        }
+    ],
     "Exploratory Testing": [
         {
             title: "Getting The Most Out of Team Exploratory Testing Sessions",
