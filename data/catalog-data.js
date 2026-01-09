@@ -25,6 +25,16 @@ const DATA = {
             url: "https://www.youtube.com/watch?v=M2AX7NvdDKc"
         }
     ],
+    "o11y & monitoring": [
+        {
+            title: "Logrepo: Enabling Data-Driven Decisions",
+            speakers: ["Jeff Chien", "Jason Koppe"],
+            event: "IndeedEng Talks",
+            city: "Austin",
+            year: 2012,
+            url: "https://www.youtube.com/watch?v=y0WC1cxLsfo"
+        }
+    ],
     "i18n": [
         {
             title: "Eita! Why Internationalization and Localization matter",
