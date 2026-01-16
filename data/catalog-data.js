@@ -37,6 +37,22 @@ const DATA = {
     ],
     "i18n": [
         {
+            title: "Launching Indeed Around the World",
+            speakers: ["Davide Novelli","David Tulig"],
+            event: "@IndeedEng Talks",
+            city: "Austin",
+            year: 2013,
+            url: "https://www.youtube.com/watch?v=WcutrMiAhLk"
+        },
+        {
+            title: "Tokens and Millicents",
+            speakers: ["Dan Heller","Preetha Appan"],
+            event: "@IndeedEng Talks",
+            city: "Austin",
+            year: 2014,
+            url: "https://www.youtube.com/watch?v=JMVEmzkh7II"
+        },
+        {
             title: "Eita! Why Internationalization and Localization matter",
             speakers: ["Nicolle Cysneiros"],
             event: "DjangoCon 2019",
