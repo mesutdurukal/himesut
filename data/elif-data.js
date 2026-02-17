@@ -1,5 +1,5 @@
 // Countries Elif has visited
-const elifCountries = ['Japan', 'Turkey', 'Greece', 'Hungary'];
+const elifCountries = ['Japan', 'Turkey', 'Greece', 'Hungary', 'Belgium'];
 
 // Elif's travel locations
 const locations = [
