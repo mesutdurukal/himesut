@@ -3,11 +3,13 @@
 const talksData = [
     // Upcoming (set upcoming: true for conferences not yet confirmed with details)
     { title: "No More Code-Phobia: Make It Less Scary with AI", conference: "OSCG", country: "Online", date: "2026-02-14", topics: ["AI/ML"], recording: null, logo: "oscg.jpg", upcoming: true },
-    { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: null, logo: "taqelah.png", upcoming: true },
     { title: "No More Code-Phobia: Make It Less Scary with AI", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: null, logo: "browserStack.png", upcoming: true },
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg", upcoming: true },
     { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: null, logo: "istc.png", upcoming: true },
     { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png", upcoming: true },
+
+    // 2026
+    { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: null, logo: "taqelah.png"},
 
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
