@@ -7,9 +7,10 @@ const talksData = [
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg", upcoming: true },
     { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: null, logo: "istc.png", upcoming: true },
     { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png", upcoming: true },
+    { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png", upcoming: true },
 
     // 2026
-    { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: null, logo: "taqelah.png"},
+    { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
 
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
