@@ -91,7 +91,8 @@ const travelImages = {
     "Belgium": [
         { "src": "travel/travel_brussels.jpg", "caption": "Brussels" },
         { "src": "travel/travel_bruges.png", "caption": "Bruges" },
-        { "src": "travel/travel_antwerp.png", "caption": "Antwerp" }
+        { "src": "travel/travel_antwerp.png", "caption": "Antwerp" },
+        { "src": "travel/travel_mechelen.jpeg", "caption": "Mechelen" }
     ],
     "Portugal": [
         { "src": "travel/travel_lisbon.jpg", "caption": "Lisbon" }

@@ -63,5 +63,6 @@ const locations = [
     { coords: [39.8468, 33.5153], image: 'kirikkale.png', title: 'Kirikkale, Turkey - 10.02.2026' },
     { coords: [40.97925534554763, 29.055391433253078], image: '2026istanbul.png', title: 'Istanbul, Turkey - 12.02.2026' },
     { coords: [51.2194, 4.4025], image: 'antwerp.png', title: 'Antwerp, Belgium - 15.02.2026' },
-    { coords: [51.20506296098596, 3.2254689281182314], image: 'bruges.png', title: 'Bruges, Belgium - 21.02.2026' }
+    { coords: [51.20506296098596, 3.2254689281182314], image: 'bruges.png', title: 'Bruges, Belgium - 21.02.2026' },
+    { coords: [51.02506296098596, 4.2254689281182314], image: 'mechelen.jpeg', title: 'Mechelen, Belgium - 20.03.2026' }
 ];
