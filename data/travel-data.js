@@ -66,6 +66,7 @@ const travelImages = {
     "Netherlands": [
         { "src": "travel/travel_amsterdam.jpg", "caption": "Amsterdam" },
         { "src": "travel/travel_utrecht.jpg", "caption": "Utrecht" }
+        { "src": "travel/travel_eindhoven.jpg", "caption": "Eindhoven" }
     ],
     "Montenegro": [
         { "src": "travel/travel_kotor.jpg", "caption": "Kotor" },
