@@ -65,5 +65,6 @@ const locations = [
     { coords: [51.2194, 4.4025], image: 'antwerp.png', title: 'Antwerp, Belgium - 15.02.2026' },
     { coords: [51.20506296098596, 3.2254689281182314], image: 'bruges.png', title: 'Bruges, Belgium - 21.02.2026' },
     { coords: [51.02506296098596, 4.2254689281182314], image: 'mechelen.jpeg', title: 'Mechelen, Belgium - 20.03.2026' },
-    { coords: [51.441867819335855, 5.467437068940478], image: 'psveindhoven.jpg', title: 'Philips Stadium, Netherlands - 28.03.2026' }
+    { coords: [51.441867819335855, 5.467437068940478], image: 'psveindhoven.jpg', title: 'Philips Stadium, Netherlands - 28.03.2026' },
+    { coords: [51.037, 3.7304], image: 'gent.jpg', title: 'Ghent, Belgium - 05.04.2026' },
 ];
