@@ -10,7 +10,7 @@ const talksData = [
 
     // 2026
     { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
-    { title: "Future of Testing: ML in Test", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: null, logo: "browserStack.png" },
+    { title: "Future of Testing: ML in Test", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: "https://youtu.be/OTXRv9ncMfs", logo: "browserStack.png" },
 
 
     // 2025
