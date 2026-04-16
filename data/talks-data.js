@@ -6,14 +6,15 @@ const talksData = [
     { title: "Mutation Testing", conference: "Jaipur QA Meetup", country: "Online", date: "2026-04-25", topics: ["Mutation,Automation"], recording: null, logo: "jaipur.jpg", upcoming: true },
     { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: null, logo: "istc.png", upcoming: true },
     { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png", upcoming: true },
+    { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg", upcoming: true },
     { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png", upcoming: true },
+    { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
 
     // 2026
     { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
     { title: "Future of Testing: ML in Test", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: "https://youtu.be/OTXRv9ncMfs", logo: "browserStack.png" },
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg" },
     
-
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
     { title: "UserFriendly Automation Framework", conference: "KWSQA", country: "Online", date: "2025-10-29", topics: ["Test Automation"], recording: null, logo: "kwsqa.png" },

@@ -1,5 +1,5 @@
 // Countries Elif has visited
-const elifCountries = ['Japan', 'Turkey', 'Greece', 'Hungary', 'Belgium', 'Netherlands'];
+const elifCountries = ['Japan', 'Turkey', 'Greece', 'Hungary', 'Belgium', 'Netherlands', 'France'];
 
 // Elif's travel locations
 const locations = [
@@ -67,4 +67,5 @@ const locations = [
     { coords: [51.02506296098596, 4.2254689281182314], image: 'mechelen.jpeg', title: 'Mechelen, Belgium - 20.03.2026' },
     { coords: [51.441867819335855, 5.467437068940478], image: 'psveindhoven.jpg', title: 'Philips Stadium, Netherlands - 28.03.2026' },
     { coords: [51.037, 3.7304], image: 'gent.jpg', title: 'Ghent, Belgium - 05.04.2026' },
+    { coords: [43.7034, 7.2663], image: 'elifnice.jpeg', title: 'Nice, France - 17.04.2026' },
 ];
