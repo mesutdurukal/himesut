@@ -9,6 +9,7 @@ const talksData = [
     { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg", upcoming: true },
     { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png", upcoming: true },
     { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
+    { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg", upcoming: true },
 
     // 2026
     { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
