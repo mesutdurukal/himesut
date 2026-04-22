@@ -137,6 +137,14 @@ const DATA = {
             city: "Sydney, Australia",
             year: 2020,
             url: "https://youtu.be/vQrnVD6CbxU"
+        },
+        {
+            title: "Mutation Testing",
+            speakers: ["Isabel Garrido Cárdenas"],
+            event: "Nerdearla",
+            city: "Online",
+            year: 2024,
+            url: "https://youtu.be/c-W8UjkTjoU"
         }
     ],
     "Test Automation Patterns": [
