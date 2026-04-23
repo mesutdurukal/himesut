@@ -139,6 +139,22 @@ const DATA = {
             url: "https://youtu.be/vQrnVD6CbxU"
         },
         {
+            title: "Kill All Mutants! (Intro to Mutation Testing)",
+            speakers: ["Dave Aronson"],
+            event: "JS Conf Hawaii",
+            city: "Hawaii, USA",
+            year: 2020,
+            url: "https://youtu.be/yNMBOj7JUPs"
+        },
+        {
+            title: "Making Mutants Work for You",
+            speakers: ["Henry Coles"],
+            event: "Goto Conferences",
+            city: "Copenhagen, Denmark",
+            year: 2019,
+            url: "https://youtu.be/LoFJajoJQ2g"
+        },
+        {
             title: "Mutation Testing",
             speakers: ["Isabel Garrido Cárdenas"],
             event: "Nerdearla",
