@@ -70,4 +70,5 @@ const locations = [
     { coords: [43.7034, 7.2663], image: 'elifnice.jpeg', title: 'Nice, France - 17.04.2026' },
     { coords: [43.7334, 7.3500], image: 'eze.jpg', title: 'Eze, France - 17.04.2026' },
     { coords: [43.7384, 7.4246], image: 'monaco.jpg', title: 'Monaco - 17.04.2026' },
+    { coords: [50.8503, 4.3517], image: 'brussels.jpg', title: 'Brussels, Belgium - 26.04.2026' },
 ];
