@@ -71,6 +71,8 @@ const locations = [
     { coords: [43.7334, 7.3500], image: 'eze.jpg', title: 'Eze, France - 17.04.2026' },
     { coords: [43.7384, 7.4246], image: 'monaco.jpg', title: 'Monaco - 17.04.2026' },
     { coords: [50.8503, 4.3517], image: 'brussels.jpg', title: 'Brussels, Belgium - 26.04.2026' },
+    { coords: [52.26983998100744, 4.546997970842681], image: 'keukenhof.jpg', title: 'Keukenhof, Netherlands - 01.05.2026' },
+    { coords: [52.36655941055476, 4.914533908768919], image: 'amsterdam.jpg', title: 'Amsterdam, Netherlands - 01.05.2026' },
+    { coords: [52.09076253108829, 5.121490186187314], image: 'utrecht.jpg', title: 'Utrecht, Netherlands - 02.05.2026' },
     { coords: [51.130066934280926, 4.571254329702677], image: 'lier.jpg', title: 'Lier, Belgium - 10.05.2026' },
-    
 ];
