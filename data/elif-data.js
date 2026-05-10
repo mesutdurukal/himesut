@@ -64,11 +64,13 @@ const locations = [
     { coords: [40.97925534554763, 29.055391433253078], image: '2026istanbul.png', title: 'Istanbul, Turkey - 12.02.2026' },
     { coords: [51.2194, 4.4025], image: 'antwerp.png', title: 'Antwerp, Belgium - 15.02.2026' },
     { coords: [51.20506296098596, 3.2254689281182314], image: 'bruges.png', title: 'Bruges, Belgium - 21.02.2026' },
-    { coords: [51.02506296098596, 4.2254689281182314], image: 'mechelen.jpeg', title: 'Mechelen, Belgium - 20.03.2026' },
+    { coords: [51.02829555648321, 4.480574147747434], image: 'mechelen.jpeg', title: 'Mechelen, Belgium - 20.03.2026' },
     { coords: [51.441867819335855, 5.467437068940478], image: 'psveindhoven.jpg', title: 'Philips Stadium, Netherlands - 28.03.2026' },
     { coords: [51.037, 3.7304], image: 'gent.jpg', title: 'Ghent, Belgium - 05.04.2026' },
     { coords: [43.7034, 7.2663], image: 'elifnice.jpeg', title: 'Nice, France - 17.04.2026' },
     { coords: [43.7334, 7.3500], image: 'eze.jpg', title: 'Eze, France - 17.04.2026' },
     { coords: [43.7384, 7.4246], image: 'monaco.jpg', title: 'Monaco - 17.04.2026' },
     { coords: [50.8503, 4.3517], image: 'brussels.jpg', title: 'Brussels, Belgium - 26.04.2026' },
+    { coords: [51.130066934280926, 4.571254329702677], image: 'lier.jpg', title: 'Lier, Belgium - 10.05.2026' },
+    
 ];
