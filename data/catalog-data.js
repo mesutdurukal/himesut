@@ -103,6 +103,64 @@ const DATA = {
             url: "https://www.youtube.com/watch?v=Niof-eVb9wc"
         }
     ],
+    "Testing AI": [
+        {
+            title: "From Bugs to Brilliance: How to Test Your Chatbot Effectively",
+            speakers: ["Dušanka Lečić"],
+            event: "TestWarez",
+            city: "Wisla",
+            year: 2025,
+            url: "https://youtu.be/_NiKF3bdj9I"
+        },
+        {
+            title: "Chatbot testing in the real world: Making sense of an emerging practice",
+            speakers: ["Tayakorn Gindavichu", "Warintorn Phusomsai"],
+            event: "XConf APAC",
+            city: "Singapore",
+            year: 2025,
+            url: "https://youtu.be/PzmZPzPK_0M"
+        },
+        {
+            title: "What if your chatbot tests could write themselves?",
+            speakers: ["Yury Kastyrka"],
+            event: "QECD",
+            city: "Online",
+            year: 2023,
+            url: "https://youtu.be/iYTJ5NvlCFU"
+        },
+        {
+            title: "Mastering LLM Chatbot Testing: Metrics, Methods and Mistakes to Avoid",
+            speakers: ["James Massa"],
+            event: "Testflix",
+            city: "Online",
+            year: 2024,
+            url: "https://youtu.be/iYTJ5NvlCFU"
+        },
+        {
+            title: "Chatbot testing: what is it and how to test it",
+            speakers: ["Zangar Batyrkhan"],
+            event: "Quality Assurance Hub",
+            city: "Online",
+            year: 2022,
+            url: "https://www.youtube.com/live/5QUHBveGx7I"
+        },
+        {
+            title: "How to Effectively Test Your Chatbot",
+            speakers: ["Soumya Mukherjee"],
+            event: "Rasa Summit",
+            city: "Online",
+            year: 2021,
+            url: "https://youtu.be/fPtH2sclyCY"
+        },       
+        {
+            title: "Chatbot Testing",
+            speakers: ["Ruby Peng"],
+            event: "QA Day",
+            city: "Online",
+            year: 2020,
+            url: "https://youtu.be/mXh6hVKK84s"
+        },   
+    ],
     "Test Smells & Flakiness": [
         {
             title: "What's That Smell? Identify Code Smells, Clean Up Test Code",
