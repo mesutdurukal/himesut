@@ -3,12 +3,12 @@
 const talksData = [
     // Upcoming (set upcoming: true for conferences not yet confirmed with details)
     // { title: "No More Code-Phobia: Make It Less Scary with AI", conference: "OSCG", country: "Online", date: "2026-02-14", topics: ["AI/ML"], recording: null, logo: "oscg.jpg", upcoming: true },
-    { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg", upcoming: true },
     { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png", upcoming: true },
     { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
     { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg", upcoming: true },
 
     // 2026
+    { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg" },
     { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
     { title: "Future of Testing: ML in Test", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: "https://youtu.be/OTXRv9ncMfs", logo: "browserStack.png" },
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg" },
