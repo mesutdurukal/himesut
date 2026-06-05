@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'Greece': [37.98, 23.73], 'United States': [38.91, -77.04], 'Canada': [45.42, -75.70],
         'England': [51.51, -0.13], 'Singapore': [1.35, 103.82], 'Taiwan': [25.03, 121.57],
         'Thailand': [13.76, 100.50], 'Philippines': [14.60, 120.98], 'Vietnam': [21.03, 105.85],
-        'Denmark': [55.68, 12.57], 'Norway': [59.91, 10.75], 'Malaysia': [3.14, 101.69]
+        'Denmark': [55.68, 12.57], 'Norway': [59.91, 10.75], 'Malaysia': [3.14, 101.69],
+        'Romania': [44.43, 26.10]
     };
 
     // Initialize map centered on a world view

@@ -26,7 +26,7 @@ const countryToCode = {
     'Belgium': 'be', 'Portugal': 'pt', 'Japan': 'jp', 'Greece': 'gr',
     'United States': 'us', 'Canada': 'ca', 'England': 'gb', 'Singapore': 'sg',
     'Taiwan': 'tw', 'Thailand': 'th', 'Philippines': 'ph', 'Vietnam': 'vn',
-    'Denmark': 'dk', 'Norway': 'no', 'Malaysia': 'my'
+    'Denmark': 'dk', 'Norway': 'no', 'Malaysia': 'my', 'Romania': 'ro'
 };
 
 /**

@@ -162,6 +162,9 @@ const travelImages = {
     ],
     "Malaysia": [
         { "src": "travel/travel_kl.jpg", "caption": "Kuala Lumpur" }
+    ],
+    "Romania": [
+        { "src": "travel/travel_bucharest.jpg", "caption": "Bucharest" }
     ]
 };
 
