@@ -93,6 +93,16 @@ const DATA = {
             url: "https://www.youtube.com/watch?v=2G4PKa6eFX8"
         }
     ],
+    "Reduce Test Load": [
+        {
+            title: "Should we just... delete it?!",
+            speakers: ["João Proença"],
+            event: "OmniTestingConf",
+            city: "Online",
+            year: 2021,
+            url: "https://youtu.be/kEaAoSeQYNc"
+        }
+    ],
     "Exploratory Testing": [
         {
             title: "Getting The Most Out of Team Exploratory Testing Sessions",
