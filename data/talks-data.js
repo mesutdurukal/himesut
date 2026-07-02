@@ -3,18 +3,21 @@
 const talksData = [
     // Upcoming (set upcoming: true for conferences not yet confirmed with details)
     // { title: "No More Code-Phobia: Make It Less Scary with AI", conference: "OSCG", country: "Online", date: "2026-02-14", topics: ["AI/ML"], recording: null, logo: "oscg.jpg", upcoming: true },
-    { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png", upcoming: true },
+    { title: "Flkay, Fragile and Forgotten", conference: "TestMu", country: "Online", date: "2026-08-19", topics: ["Automation"], recording: null, logo: "testmu.jpg", upcoming: true},
+    { title: "Global Cultural reflections on Testing", conference: "Javazone", country: "Norway", date: "2026-09-02", topics: ["Soft Skills, Communication"], recording: null, logo: "javazone.png", upcoming: true},
     { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
     { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg", upcoming: true },
 
     // 2026
-    { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg" },
     { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
     { title: "Future of Testing: ML in Test", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: "https://youtu.be/OTXRv9ncMfs", logo: "browserStack.png" },
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg" },
     { title: "Mutation Testing", conference: "Jaipur QA Meetup", country: "Online", date: "2026-04-25", topics: ["Mutation,Automation"], recording: null, logo: "jaipur.jpg" },
     { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: null, logo: "istc.png" },
-     { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png" },
+    { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png" },
+    { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg" },
+    { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png" },
+    { title: "Global Cultural reflections on Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Soft Skills, Communication"], recording: null, logo: "dwx.png"},
 
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },

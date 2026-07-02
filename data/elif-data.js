@@ -78,3 +78,18 @@ const locations = [
     { coords: [41.034615191337174, 29.030741098138247], image: 'kuzguncuk.jpg', title: 'Kuzguncuk, Istanbul - 23.05.2026' },
     { coords: [40.64286928902073, 30.2332160514145], image: 'istanbuldere.jpg', title: 'Istanbuldere, Masukiye - 24.05.2026' },
 ];
+
+async verifyCellValueVisible(itemName) {
+    const itemRow = getRowByName(itemName);
+    const valueCell = getValueCell(itemRow.parentElement());
+    expect(valueCell).toBeDisplayed();
+}
+
+async getItemRowValues(itemNames) {
+    return Promise.all(itemNames.map(async (itemName) => {
+        const itemRow = getRowByName(itemName);
+        const valueCell = getValueCell(itemRow.parentElement());
+        return valueCell.getText();
+     }))
+}
+
