@@ -3,7 +3,7 @@
 const talksData = [
     // Upcoming (set upcoming: true for conferences not yet confirmed with details)
     // { title: "No More Code-Phobia: Make It Less Scary with AI", conference: "OSCG", country: "Online", date: "2026-02-14", topics: ["AI/ML"], recording: null, logo: "oscg.jpg", upcoming: true },
-    { title: "Flkay, Fragile and Forgotten", conference: "TestMu", country: "Online", date: "2026-08-19", topics: ["Automation"], recording: null, logo: "testmu.jpg", upcoming: true},
+    { title: "Flaky, Fragile and Forgotten", conference: "TestMu", country: "Online", date: "2026-08-19", topics: ["Automation"], recording: null, logo: "testmu.jpg", upcoming: true},
     { title: "Global Cultural reflections on Testing", conference: "Javazone", country: "Norway", date: "2026-09-02", topics: ["Soft Skills, Communication"], recording: null, logo: "javazone.png", upcoming: true},
     { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
     { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg", upcoming: true },
