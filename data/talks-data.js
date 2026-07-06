@@ -14,7 +14,7 @@ const talksData = [
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg" },
     { title: "Mutation Testing", conference: "Jaipur QA Meetup", country: "Online", date: "2026-04-25", topics: ["Mutation,Automation"], recording: null, logo: "jaipur.jpg" },
     { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: null, logo: "istc.png" },
-    { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: null, logo: "a4q.png" },
+    { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: "https://www.youtube.com/live/0fvEB8ldgpM", logo: "a4q.png" },
     { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg" },
     { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png" },
     { title: "Global Cultural reflections on Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Soft Skills, Communication"], recording: null, logo: "dwx.png"},

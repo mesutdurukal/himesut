@@ -1,5 +1,5 @@
 // Countries Elif has visited
-const elifCountries = ['Japan', 'Turkey', 'Greece', 'Hungary', 'Belgium', 'Netherlands', 'France', 'Monaco'];
+const elifCountries = ['Japan', 'Turkey', 'Greece', 'Hungary', 'Belgium', 'Netherlands', 'France', 'Monaco', 'Germany'];
 
 // Elif's travel locations
 const locations = [
@@ -77,19 +77,8 @@ const locations = [
     { coords: [51.130066934280926, 4.571254329702677], image: 'lier.jpg', title: 'Lier, Belgium - 10.05.2026' },
     { coords: [41.034615191337174, 29.030741098138247], image: 'kuzguncuk.jpg', title: 'Kuzguncuk, Istanbul - 23.05.2026' },
     { coords: [40.64286928902073, 30.2332160514145], image: 'istanbuldere.jpg', title: 'Istanbuldere, Masukiye - 24.05.2026' },
+    { coords: [49.4875, 8.466], image: 'mannheim.jpg', title: 'Mannheim, Germany - 03.07.2026' },
+    { coords: [48.079, 7.358], image: 'colmar.jpg', title: 'Colmar, France - 05.07.2026' },
+    { coords: [48.5846, 7.7507], image: 'strasbourg.jpg', title: 'Strasbourg, France - 06.07.2026' },
 ];
-
-async verifyCellValueVisible(itemName) {
-    const itemRow = getRowByName(itemName);
-    const valueCell = getValueCell(itemRow.parentElement());
-    expect(valueCell).toBeDisplayed();
-}
-
-async getItemRowValues(itemNames) {
-    return Promise.all(itemNames.map(async (itemName) => {
-        const itemRow = getRowByName(itemName);
-        const valueCell = getValueCell(itemRow.parentElement());
-        return valueCell.getText();
-     }))
-}
 

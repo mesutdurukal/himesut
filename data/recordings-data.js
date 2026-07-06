@@ -100,7 +100,8 @@ const recordingsData = {
     ],
     "Zen of Testing": [
         { url: "https://youtu.be/pvXyuuCZENc", img: "jotb.jpg" },
-        { url: "https://youtu.be/vKpVlrWufug", img: "hustefLogo.png" }
+        { url: "https://youtu.be/vKpVlrWufug", img: "hustefLogo.png" },
+        { url: "https://www.youtube.com/live/0fvEB8ldgpM", img: "a4q.png" }
     ],
     "Keyword Driven Testing": [
         { url: "https://youtu.be/V4AVg0bXyb4", img: "teaser.jpg" }
