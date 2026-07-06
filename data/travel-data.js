@@ -54,7 +54,8 @@ const travelImages = {
         { "src": "travel/travel_eze.jpg", "caption": "Eze" },
         { "src": "travel/travel_colmar.jpg", "caption": "Colmar" },
         { "src": "travel/travel_lille.jpg", "caption": "Lille" },
-        { "src": "travel/travel_bord.jpg", "caption": "Bordeaux" }
+        { "src": "travel/travel_bord.jpg", "caption": "Bordeaux" },
+        { "src": "travel/travel_strasbourg.jpg", "caption": "Strasbourg" }  
     ],
     "Italy": [
         { "src": "travel/travel_rome.jpg", "caption": "Rome" },
