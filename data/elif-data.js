@@ -74,7 +74,7 @@ const locations = [
     { coords: [52.26983998100744, 4.546997970842681], image: 'keukenhof.jpg', title: 'Keukenhof, Netherlands - 01.05.2026' },
     { coords: [52.36655941055476, 4.914533908768919], image: 'amsterdam.jpg', title: 'Amsterdam, Netherlands - 01.05.2026' },
     { coords: [52.09076253108829, 5.121490186187314], image: 'utrecht.jpg', title: 'Utrecht, Netherlands - 02.05.2026' },
-    { coords: [51.130066934280926, 4.571254329702677], image: 'lier.jpg', title: 'Lier, Belgium - 10.05.2026' },
+    { coords: [51.130066934280926, 4.571254329702677], image: 'lier.JPG', title: 'Lier, Belgium - 10.05.2026' },
     { coords: [41.034615191337174, 29.030741098138247], image: 'kuzguncuk.jpg', title: 'Kuzguncuk, Istanbul - 23.05.2026' },
     { coords: [40.64286928902073, 30.2332160514145], image: 'istanbuldere.jpg', title: 'Istanbuldere, Masukiye - 24.05.2026' },
     { coords: [49.4875, 8.466], image: 'mannheim.jpg', title: 'Mannheim, Germany - 03.07.2026' },
