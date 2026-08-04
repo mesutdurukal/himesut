@@ -1,0 +1,25 @@
+{
+  "servers": {
+    "opal-sources": {
+      "type": "sse",
+      "url": "https://companionservice-dev.omp.com/mcp/opal/sse",
+      "description": "OMP Help & OSS"
+    },
+    "omp-documentation": {
+      "type": "sse",
+      "url": "https://companionservice-dev.omp.com/mcp/docs/sse",
+      "description": "Tools for OMP documentation lookup"
+    },
+    "azure-devops-readonly": {
+      "type": "http",
+      "url": "https://mcp.dev.azure.com/OMPartners",
+      "headers": {
+        "X-MCP-Readonly": "true"
+      }
+    },
+    "bugparade": {
+      "type": "http",
+      "url": "https://bugparade-mcp-dev-aca9gmfvfkh4aady.westeurope-01.azurewebsites.net/mcp"
+    }
+  }
+}

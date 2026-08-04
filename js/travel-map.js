@@ -10,19 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mapElement = document.getElementById('travelMap');
     if (!mapElement) return;
 
-    // Capital city coordinates lookup
-    const capitalCoords = {
-        'Turkey': [39.93, 32.86], 'Germany': [52.52, 13.40], 'Bosnia': [43.86, 18.41],
-        'Croatia': [45.81, 15.98], 'France': [48.86, 2.35], 'Italy': [41.90, 12.50],
-        'Netherlands': [52.37, 4.90], 'Montenegro': [42.44, 19.26], 'Spain': [40.42, -3.70],
-        'Czech Republic': [50.08, 14.44], 'Hungary': [47.50, 19.04], 'Austria': [48.21, 16.37],
-        'Belgium': [50.85, 4.35], 'Portugal': [38.72, -9.14], 'Japan': [35.68, 139.69],
-        'Greece': [37.98, 23.73], 'United States': [38.91, -77.04], 'Canada': [45.42, -75.70],
-        'England': [51.51, -0.13], 'Singapore': [1.35, 103.82], 'Taiwan': [25.03, 121.57],
-        'Thailand': [13.76, 100.50], 'Philippines': [14.60, 120.98], 'Vietnam': [21.03, 105.85],
-        'Denmark': [55.68, 12.57], 'Norway': [59.91, 10.75], 'Malaysia': [3.14, 101.69],
-        'Romania': [44.43, 26.10]
-    };
+    // Coordinates from travelImages in travel-data.js
 
     // Initialize map centered on a world view
     const map = L.map('travelMap').setView([30, 20], 2);
@@ -45,8 +33,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Add markers for each visited place
     travelData.forEach(place => {
-        const coords = capitalCoords[place.name];
-        if (!coords) return;
+        const country = typeof travelImages !== 'undefined' && travelImages[place.name];
+        if (!country || !country.coords) return;
+        const coords = country.coords;
         const marker = L.marker(coords, { icon: visitedIcon }).addTo(map);
         
         // Create popup content

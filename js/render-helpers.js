@@ -18,16 +18,7 @@ function renderConferenceLogo(conference, basePath = 'img/conferences/') {
     return imgTag;
 }
 
-// Country name to ISO code mapping for flag-icon CSS
-const countryToCode = {
-    'Turkey': 'tr', 'Germany': 'de', 'Bosnia': 'ba', 'Croatia': 'hr',
-    'France': 'fr', 'Italy': 'it', 'Netherlands': 'nl', 'Montenegro': 'me',
-    'Spain': 'es', 'Czech Republic': 'cz', 'Hungary': 'hu', 'Austria': 'at',
-    'Belgium': 'be', 'Portugal': 'pt', 'Japan': 'jp', 'Greece': 'gr',
-    'United States': 'us', 'Canada': 'ca', 'England': 'gb', 'Singapore': 'sg',
-    'Taiwan': 'tw', 'Thailand': 'th', 'Philippines': 'ph', 'Vietnam': 'vn',
-    'Denmark': 'dk', 'Norway': 'no', 'Malaysia': 'my', 'Romania': 'ro'
-};
+// ISO codes from travelImages in travel-data.js
 
 /**
  * Renders a travel icon using flag-icon CSS
@@ -35,8 +26,9 @@ const countryToCode = {
  * @returns {string} HTML string for the travel icon
  */
 function renderTravelIcon(travel) {
-    const code = countryToCode[travel.name];
-    if (!code) return '';
+    const country = typeof travelImages !== 'undefined' && travelImages[travel.name];
+    if (!country || !country.code) return '';
+    const code = country.code;
     
     const flagDiv = `<div class="flag-icon flag-icon-${code}" title="${travel.name}" style="width: 40px; height: 30px; display: inline-block; margin: 5px;"></div>`;
     
