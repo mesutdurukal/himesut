@@ -84,4 +84,5 @@ const locations = [
     { coords: [49.6117, 6.13], image: 'luxembourgElif.jpg', title: 'Luxembourg, Luxembourg - 01.08.2026' },
     { coords: [49.119308, 6.175715], image: 'metz.jpg', title: 'Metz, France - 01.08.2026' },
     { coords: [50.2618, 4.9186], image: 'dinant.jpg', title: 'Dinant, Belgium - 02.08.2026' },
+    { coords: [50.6292, 3.0573], image: 'lille.jpeg', title: 'Lille, France - 16.08.2026' },
 ];

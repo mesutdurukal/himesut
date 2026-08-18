@@ -273,6 +273,14 @@ const DATA = {
             city: "New York",
             year: 2018,
             url: "https://youtu.be/0t4_MfHgb_A"
+        },
+        {
+            title: "Yapay Zekâ Ekseninde Kod Gözden Geçirme: İyi ve Kötü Pratikler",
+            speakers: ["Ahmed Enis Erkaya"],
+            event: "Java Day Istanbul",
+            city: "Istanbul, Turkey",
+            year: 2026,
+            url: "https://youtu.be/uI9vGf1I3mc"
         }
     ],
     "UI/UX": [
