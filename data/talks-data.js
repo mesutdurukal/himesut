@@ -2,8 +2,6 @@
 // logo field should match the image filename in img/conferences/
 const talksData = [
     // Upcoming (set upcoming: true for conferences not yet confirmed with details)
-    // { title: "No More Code-Phobia: Make It Less Scary with AI", conference: "OSCG", country: "Online", date: "2026-02-14", topics: ["AI/ML"], recording: null, logo: "oscg.jpg", upcoming: true },
-    { title: "Flaky, Fragile and Forgotten", conference: "TestMu", country: "Online", date: "2026-08-19", topics: ["Automation"], recording: null, logo: "testmu.jpg", upcoming: true},
     { title: "Global Cultural reflections on Testing", conference: "Javazone", country: "Norway", date: "2026-09-02", topics: ["Soft Skills, Communication"], recording: null, logo: "javazone.png", upcoming: true},
     { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
     { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg", upcoming: true },
@@ -18,7 +16,8 @@ const talksData = [
     { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg" },
     { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png" },
     { title: "Global Cultural reflections on Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Soft Skills, Communication"], recording: null, logo: "dwx.png"},
-
+    { title: "Flaky, Fragile and Forgotten", conference: "TestMu", country: "Online", date: "2026-08-19", topics: ["Automation"], recording: null, logo: "testmu.jpg"},
+    
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
     { title: "UserFriendly Automation Framework", conference: "KWSQA", country: "Online", date: "2025-10-29", topics: ["Test Automation"], recording: null, logo: "kwsqa.png" },
