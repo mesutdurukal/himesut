@@ -236,7 +236,8 @@ const travelImages = {
         code: 'no', coords: [59.91, 10.75],
         images: [
             { "src": "travel/travel_oslo.jpg", "caption": "Oslo" },
-            { "src": "travel/travel_bergen.jpg", "caption": "Bergen" }
+            { "src": "travel/travel_bergen.jpg", "caption": "Bergen" },
+            { "src": "travel/travel_lillestrom.jpg", "caption": "Lillestrøm" }
         ]
     },
     "Malaysia": {
