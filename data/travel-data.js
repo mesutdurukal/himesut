@@ -133,7 +133,9 @@ const travelImages = {
             { "src": "travel/travel_bruges.png", "caption": "Bruges" },
             { "src": "travel/travel_antwerp.png", "caption": "Antwerp" },
             { "src": "travel/travel_mechelen.jpeg", "caption": "Mechelen" },
-            { "src": "travel/travel_ghent.jpeg", "caption": "Ghent" }
+            { "src": "travel/travel_ghent.jpeg", "caption": "Ghent" },
+            { "src": "travel/travel_durbuy.png", "caption": "Durbuy" },
+            { "src": "travel/travel_namur.png", "caption": "Namur" }
         ]
     },
     "Portugal": {

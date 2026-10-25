@@ -16,7 +16,8 @@ const talksData = [
     { title: "Global Cultural reflections on Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Soft Skills, Communication"], recording: null, logo: "dwx.png"},
     { title: "Flaky, Fragile and Forgotten", conference: "TestMu", country: "Online", date: "2026-08-19", topics: ["Automation"], recording: "https://youtu.be/AmOkFaEGS8Q", logo: "testmu.jpg"},
     { title: "Global Cultural reflections on Testing", conference: "Javazone", country: "Norway", date: "2026-09-02", topics: ["Soft Skills, Communication"], recording: "https://vimeo.com/1223417266", logo: "javazone.png"},
-    { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png", upcoming: true },
+    { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png"},
+    { title: "Flaky, Fragile and Forgotten", conference: "SoftCon", country: "Online", date: "2026-10-26", topics: ["Automation"], recording: null, logo: "softcon.png"},
     
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
