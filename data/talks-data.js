@@ -9,7 +9,7 @@ const talksData = [
     { title: "Future of Testing: ML in Test", conference: "BrowserStack", country: "Online", date: "2026-04-01", topics: ["AI/ML"], recording: "https://youtu.be/OTXRv9ncMfs", logo: "browserStack.png" },
     { title: "Warehouse Automation: Testing AMRs", conference: "UCAAT", country: "France", date: "2026-04-14", topics: ["Robotics"], recording: null, logo: "ucaatLogo.jpg" },
     { title: "Mutation Testing", conference: "Jaipur QA Meetup", country: "Online", date: "2026-04-25", topics: ["Mutation,Automation"], recording: null, logo: "jaipur.jpg" },
-    { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: null, logo: "istc.png" },
+    { title: "Mutation Testing", conference: "Istanbul Software Testing Conference", country: "Turkey", date: "2026-05-22", topics: ["Mutation,Automation"], recording: "https://youtu.be/Nu6oPKvIwxo", logo: "istc.png" },
     { title: "Zen of Testing", conference: "Testing Summit", country: "Online", date: "2026-05-27", topics: ["Testing"], recording: "https://www.youtube.com/live/0fvEB8ldgpM", logo: "a4q.png" },
     { title: "UserFriendly Automation Framework", conference: "DevTalks Romania", country: "Romania", date: "2026-06-04", topics: ["Test Automation"], recording: null, logo: "devtalks.jpg" },
     { title: "Mutation Testing", conference: "DWX 2026", country: "Germany", date: "2026-07-02", topics: ["Mutation,Automation"], recording: null, logo: "dwx.png" },
