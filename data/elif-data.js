@@ -87,4 +87,5 @@ const locations = [
     { coords: [50.6292, 3.0573], image: 'lille.jpeg', title: 'Lille, France - 16.08.2026' },
     { coords: [35.869476161626906, 138.3271180650051], image: 'yamanashi27.jpeg', title: 'Yamanashi, Japan - 26.10.2026' },
     { coords: [35.2328, 139.1064], image: 'hakone2026.jpg', title: 'Hakone, Japan - 09.11.2026' },
+    { coords: [50.9306, 5.3328], image: 'hasselt.jpg', title: 'Hasselt, Belgium - 22.11.2026' },
 ];
