@@ -1,8 +1,7 @@
 // Talks Data - Add your talks here
 // logo field should match the image filename in img/conferences/
 const talksData = [
-    // Upcoming (set upcoming: true for conferences not yet confirmed with details)
-    { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg", upcoming: true },
+    // Upcoming (set upcoming: true for conferences not yet confirmed with details)    
 
     // 2026
     { title: "Mutation Testing", conference: "Taqelah", country: "Online", date: "2026-02-28", topics: ["Mutation,Automation"], recording: "https://youtu.be/3cjaNi1eQmE", logo: "taqelah.png"},
@@ -18,6 +17,7 @@ const talksData = [
     { title: "Global Cultural reflections on Testing", conference: "Javazone", country: "Norway", date: "2026-09-02", topics: ["Soft Skills, Communication"], recording: "https://vimeo.com/1223417266", logo: "javazone.png"},
     { title: "AB Testing", conference: "Hustef", country: "Hungary", date: "2026-10-06", topics: ["AB Testing"], recording: null, logo: "hustefLogo.png"},
     { title: "Flaky, Fragile and Forgotten", conference: "SoftCon", country: "Online", date: "2026-10-26", topics: ["Automation"], recording: null, logo: "softcon.png"},
+    { title: "AB Testing", conference: "Testing United", country: "Denmark", date: "2026-11-23", topics: ["AB Testing"], recording: null, logo: "testingunited.jpg"},
     
     // 2025
     { title: "Zen of Testing", conference: "TTF", country: "Japan", date: "2025-11-14", topics: ["Testing Philosophy"], recording: null, logo: "ttf.png" },
